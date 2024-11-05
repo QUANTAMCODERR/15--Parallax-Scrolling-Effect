@@ -1,0 +1,87 @@
+.answers-section {
+    background-color: #3B3291; /* Your specified theme color */
+    background-image: url('images/rb_84377.png'); /* Option for a background image */
+    background-size: cover; /* Ensure the background image covers the entire section */
+    background-position: center; /* Center the background image */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the section */
+    margin: 20px 0; /* Margin to separate from other content */
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5); /* Increased box shadow for a glowing effect */
+    border: 2px solid rgba(255, 255, 255, 0.7); /* White semi-transparent border */
+    position: relative; /* Positioning for pseudo-elements */
+}
+
+.answers-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px; /* Match the border radius */
+    z-index: -1; /* Place behind the section */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); /* Glowing effect */
+}
+
+.answers-section h2 {
+    text-align: center; /* Centered title */
+    font-size: 2rem; /* Font size for the title */
+}
+
+.intro-text {
+    text-align: center; /* Centered intro text */
+    font-size: 1.2rem; /* Font size for the intro text */
+    margin: 10px 0; /* Margin around the intro text */
+}
+
+.answer-item {
+    margin: 15px 0; /* Margin between answer items */
+    padding: 15px; /* Padding inside each answer item */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Light border for answer items */
+    border-radius: 5px; /* Rounded corners for each item */
+    transition: background-color 0.3s ease; /* Transition effect for hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background for better readability */
+}
+
+.answer-item:hover {
+    background-color: rgba(23, 165, 10, 0.3); /* Lighten the background on hover */
+}
+
+.answer-item h3 {
+    font-size: 1.5rem; /* Font size for questions */
+    color: #ffffff; /* White color for question text */
+}
+
+.answer-item p {
+    font-size: 1.1rem; /* Font size for answers */
+    color: #ffffff; /* White color for answer text */
+    line-height: 1.5; /* Line height for better readability */
+}
+
+.answers-section {
+    background-image: url('images/rb_84377.png'); /* Option for a background image */
+    background-size: cover; /* Ensure the background image covers the entire section */
+    background-position: center; /* Center the background image */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the section */
+    margin: 20px 0; /* Margin to separate from other content */
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5); /* Increased box shadow for a glowing effect */
+    border: 2px solid rgba(255, 255, 255, 0.7); /* White semi-transparent border */
+    position: relative; /* Positioning for pseudo-elements */
+}
+
+.answers-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px; /* Match the border radius */
+    z-index: -1; /* Place behind the section */
+    background-image: url('images/rb_84377.png'); /* Option for a background image */
+    background-size: cover; /* Ensure the background image covers the entire section */
+    background-position: center; /* Center the background image */
+    filter: blur(5px); /* Apply a blur effect */
+    opacity: 0.8; /* Adjust the opacity if needed */
+}

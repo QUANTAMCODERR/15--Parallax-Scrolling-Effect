@@ -1,0 +1,140 @@
+/* Contact Section Styles */
+.contact {
+    padding: 50px;
+    background-color: #3B3291; /* Solid background color */
+    color: #fff; /* White text color */
+    font-family: 'Arial', sans-serif;
+    border-radius: 10px;
+    border: 2px solid #ffffff; /* White border */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5); /* White shadow effect */
+    line-height: 1.8;
+    position: relative; /* Allows for positioning of pseudo elements */
+}
+
+/* Background Image */
+.contact::before {
+    content: '';
+    background-image: url('assets/rb_123045.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute; /* Positioning behind text */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3; /* Adjusted opacity for better visibility */
+    z-index: 0; /* Behind all content */
+}
+
+.contact > * {
+    position: relative; /* Ensures content appears above the background image */
+    z-index: 1; /* Stacks content above the image */
+}
+
+/* Section Heading */
+.contact h1 {
+    font-size: 2.8em;
+    color: #ffffff; /* White color for better contrast */
+    margin-bottom: 20px;
+}
+
+/* Subsection Heading */
+.contact h2 {
+    font-size: 2em;
+    color: #e0e0e0; /* Lighter color for subheadings */
+    margin-top: 30px;
+}
+
+/* Paragraph Styles */
+.contact p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Contact Details */
+.contact-hod, .contact-contractors, .contact-plants, .get-in-touch {
+    margin-bottom: 30px;
+}
+
+/* Blockquote Styling */
+.contact blockquote {
+    font-size: 1.2em;
+    color: #f3f706;
+    border-left: 5px solid #4caf50;
+    padding-left: 15px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+/* Plant List Styling */
+.contact-plants ul {
+    list-style-type: circle;
+    padding-left: 40px;
+}
+
+.contact-plants li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Contractor List Styling */
+.contact-contractors ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-contractors li {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect for Contractors */
+.contact-contractors li:hover {
+    background-color: #4e4c8c; /* Highlight color on hover */
+    color: #ffffff; /* White text on hover */
+    cursor: pointer; /* Pointer cursor to indicate interactivity */
+}
+
+/* Get in Touch Section */
+.get-in-touch {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect for Get in Touch */
+.get-in-touch:hover {
+    background-color: #ff850b; /* Highlight color on hover */
+    transform: scale(1.03); /* Slight zoom-in effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhance the shadow */
+}
+
+
+.hod img {
+    width: 250px; /* Increase the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Keep the image round */
+    margin: 20px; /* Adjust margin to your preference */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for the image */
+    z-index: 1; /* Ensure the image is above the background */
+    position: absolute; /* Keep positioning context */
+    top: 20px; /* Align image to the top */
+    left: 20px; /* Align image to the left */
+}
+
+
+.hod img {
+    width: 250px; /* Increased width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Round image */
+    margin: 20px; /* Margin around image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    z-index: 1; /* Image above the background */
+    position: absolute; /* Maintain absolute positioning */
+    top: 20px; /* Top alignment */
+    left: 20px; /* Left alignment */
+}

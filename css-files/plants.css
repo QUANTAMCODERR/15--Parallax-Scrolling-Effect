@@ -1,0 +1,143 @@
+/* Section Styling */
+.plants {
+    padding: 60px 20px;
+    background-color: #3B3291;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 50px;
+}
+
+.section-title {
+    font-size: 4.5rem;
+    margin-bottom: 40px;
+    color: green;
+}
+
+/* Plants Container */
+.plants-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px; /* Space between cards */
+}
+
+/* Plant Card Layout */
+.plant-card {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    background: #3B3291;
+    color: #eaed22;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* Four cards per row with space for gap */
+    position: relative; /* Needed for absolute positioning of the button */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow transition */
+}
+
+.plant-image img {
+    width: 100%;
+    height: 445.333px;
+}
+
+.plant-info {
+    padding: 20px;
+    flex-grow: 1; /* Allow this section to grow and fill space */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Space between content and button */
+}
+
+/* Hover effect for plant cards */
+.plant-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow depth on hover */
+}
+
+/* Fixed View More Button */
+.view-more {
+    background-color: #1ee72c;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto; /* Push the button to the bottom */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.view-more:hover {
+    background-color: #5a49b7;
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+    justify-content: center; /* Center the modal */
+    align-items: center; /* Center the modal */
+}
+
+.modal-content {
+    background-color: #1c7cac;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px; /* Max width for the modal */
+    opacity: 0; /* Start hidden */
+    transform: scale(0.8); /* Start scaled down */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transition effects */
+}
+
+.modal-content.show {
+    opacity: 1; /* Fade in */
+    transform: scale(1); /* Scale up */
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .plant-card {
+        width: calc(50% - 20px); /* Two cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .plant-card {
+        width: calc(100% - 20px); /* One card per row on very small screens */
+    }
+}
+
+
+
+
+.section-title {
+    display: flex;
+    align-items: center; /* Vertically center-align items */
+    justify-content: center; /* Horizontally center-align items */
+    gap: 10px; /* Adds space between SVG and text */
+}
+
+.trees-svg {
+    display: inline-block; /* Ensures the SVG is treated as an inline element */
+    margin-right: 10px; /* Adds space between the SVG and the text */
+}
+
+.short-description{
+    font-size: 1rem;
+}

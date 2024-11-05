@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Example styling for modal */
+        #modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 50%;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+        .modal-content.show {
+            opacity: 1;
+        }
+        .close {
+            float: right;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Modal Structure -->
+    <div id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="additional-info"></div>
+        </div>
+    </div>
+
+    <!-- Plant Cards -->
+    <div class="plant">
+        <h2>Plant: Neem</h2>
+        <button class="view-more">View More</button>
+    </div>
+    <div class="plant">
+        <h2>Plant: Another Plant</h2>
+        <button class="view-more">View More</button>
+    </div>
+
+    <script>
+        const modal = document.getElementById('modal');
+        const viewMoreButtons = document.querySelectorAll('.view-more');
+        const closeButton = document.querySelector('.close');
+        const additionalInfoDiv = document.getElementById('additional-info');
+
+        // Plant information structure
+        const additionalInfo = {
+            Neem: {
+                name: 'Neem',
+                description: 'Neem is highly valued for its medicinal and agricultural uses. It can grow up to 20-30 meters in height.',
+                habitat: 'Neem trees are typically found in tropical and semi-tropical regions. They thrive in sunlight and are often found in open fields.',
+                facts: [
+                    'Neem has natural antibacterial, antiviral, and antifungal properties.',
+                    'Neem oil is used in cosmetics, medicines, and as a natural pesticide.',
+                    'Leaves are used in remedies for skin conditions.'
+                ],
+                conservationStatus: 'Neem is not endangered and is widely cultivated in many regions due to its versatility and resilience.'
+            },
+            "Another Plant": {
+                name: 'Another Plant',
+                description: 'This is a more detailed description of the second plant.',
+                habitat: 'Information about the habitat of the second plant.',
+                facts: [
+                    'Fact 1 about the second plant.',
+                    'Fact 2 about the second plant.'
+                ],
+                conservationStatus: 'Details about the conservation status of the second plant.'
+            }
+        };
+
+        // Function to generate HTML for a plant's information
+        const generatePlantInfoHTML = (plantData) => {
+            return `
+                <h3>Plant Name: ${plantData.name}</h3>
+                <h4>Description:</h4>
+                <p>${plantData.description}</p>
+                <h4>Habitat:</h4>
+                <p>${plantData.habitat}</p>
+                <h4>Interesting Facts:</h4>
+                <ul>
+                    ${plantData.facts.map(fact => `<li>${fact}</li>`).join('')}
+                </ul>
+                <h4>Conservation Status:</h4>
+                <p>${plantData.conservationStatus}</p>
+            `;
+        };
+
+        // Function to open the modal with relevant information
+        viewMoreButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                const plantName = event.target.parentElement.querySelector('h2').textContent.split(': ')[1]; // Extract plant name
+                const plantData = additionalInfo[plantName]; // Get additional info for the plant
+                if (plantData) {
+                    additionalInfoDiv.innerHTML = generatePlantInfoHTML(plantData); // Insert plant info into modal
+                    modal.style.display = 'flex'; // Show the modal
+                    setTimeout(() => {
+                        document.querySelector('.modal-content').classList.add('show'); // Fade in the modal content
+                    }, 10);
+                }
+            });
+        });
+
+        // Close the modal when the user clicks on <span> (x)
+        closeButton.onclick = function() {
+            document.querySelector('.modal-content').classList.remove('show'); // Fade out the modal content
+            setTimeout(() => {
+                modal.style.display = 'none'; // Hide the modal after fade out
+            }, 300); // Match the duration of the fade out effect
+        };
+
+        // Close the modal when clicking anywhere outside of the modal
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                document.querySelector('.modal-content').classList.remove('show'); // Fade out the modal content
+                setTimeout(() => {
+                    modal.style.display = 'none'; // Hide the modal after fade out
+                }, 300); // Match the duration of the fade out effect
+            }
+        };
+
+        // Function to add new plants easily
+        const addPlantInfo = (name, description, habitat, facts, conservationStatus) => {
+            additionalInfo[name] = {
+                name: name,
+                description: description,
+                habitat: habitat,
+                facts: facts,
+                conservationStatus: conservationStatus
+            };
+        };
+
+        // Example usage of adding a new plant:
+        addPlantInfo('Rose', 'A popular flowering plant known for its beauty and fragrance.', 
+            'Found in gardens and parks all over the world.', 
+            ['Roses have over 300 species.', 'Rose petals are edible and used in cosmetics.'], 
+            'Not endangered.'
+        );
+    </script>
+</body>
+</html>

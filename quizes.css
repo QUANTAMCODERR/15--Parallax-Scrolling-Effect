@@ -1,0 +1,86 @@
+/* General Container and Layout Styles */
+.plant-quiz-section {
+    background-color: #3B3291;  /* New background color */
+    padding: 20px;
+    border-radius: 12px; /* More rounded border */
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Box-shadow effect */
+    border: 3px solid #fff; /* Shiny white border */
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.4); /* Soft glowing effect */
+    color: #fff; /* Text color white for contrast */
+}
+
+.plant-quiz-section h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Slight shadow for title */
+}
+
+/* Container Styles */
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quiz-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.quiz-question p {
+    font-weight: bold;
+    color: #ffffff;  /* White text color for better readability */
+}
+
+.quiz-question label {
+    display: block;
+    margin: 8px 0;
+    color: #ffffff;
+}
+
+.quiz-question input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Button Styling */
+button {
+    background-color: #ffffff;
+    color: #3B3291;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+/* Quiz Result Styling */
+.quiz-result {
+    margin-top: 15px;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    border: 2px solid #ffffff; /* White border around result */
+    display: none;
+    background-color: rgba(255, 255, 255, 0.1); /* Light translucent background for results */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5); /* Glow around results box */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .quiz-row {
+        grid-template-columns: 1fr;
+    }
+}
