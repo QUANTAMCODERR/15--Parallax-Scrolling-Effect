@@ -9,6 +9,7 @@
     border: 3px solid #fff; /* Shiny white border */
     box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.4); /* Soft glowing effect */
     color: #fff; /* Text color white for contrast */
+    margin-bottom: 22px;
 }
 
 .plant-quiz-section h2 {

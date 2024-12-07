@@ -44,7 +44,7 @@
 }
 
 .answer-item:hover {
-    background-color: rgba(23, 165, 10, 0.3); /* Lighten the background on hover */
+    background-color: rgba(0, 6, 8, 0.644); /* Lighten the background on hover */
 }
 
 .answer-item h3 {

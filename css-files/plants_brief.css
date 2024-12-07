@@ -193,7 +193,7 @@ a:focus, button:focus {
 
 
 .plants-info {
-    max-width: 1800px;
+    max-width: 2000px;
     margin: 0 auto;
     padding: 0px 20px;
     line-height: 1.8;
@@ -300,6 +300,7 @@ a:focus, button:focus {
     align-items: center;
     height: 150vh; /* Full screen height */
     margin-right: -40px;
+    margin-top: -1200px;
 }
 
 .unique-tree-svg {
@@ -353,98 +354,4 @@ a:focus, button:focus {
 
 
 
-/* Unique Benefits of Trees Section */
-/* Base Styles for Sections */
-.unique-section {
-    background-color: #3B3291; /* Same background color for all sections */
-    padding: 50px;
-    position: relative;
-    color: #f0f0f0;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between; /* Space out elements evenly */
-    align-items: center; /* Center vertically */
-    height: 150vh; /* Minimum height for sections */
-    margin-bottom: 20px; /* Increase bottom margin */
-}
-
-/* Unique Tree SVG Styles */
-.unique-tree-svg1 {
-    position: absolute;
-    right: 0%; /* Hide part of the tree off the right side */
-    top: 0;
-    height: 1000px; /* Adjust height for consistency */
-    z-index: 1; /* Ensure tree stays behind the text */
-}
-
-.unique-tree-svg img {
-    height: 100%; /* Full height of the section */
-    opacity: 0.8; /* Slight transparency */
-    width: auto;
-}
-
-/* Plant Benefit Styles */
-.unique-tree-benefit {
-    font-size: 1.2rem;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 10px 15px;
-    margin: 20px 0;
-    border-radius: 8px;
-    width: fit-content;
-    text-align: left; /* Align text to the left */
-    z-index: 2; /* Ensure benefits stay on top of the tree */
-    max-width: 300px; /* Set max-width for quotes */
-    opacity: 0; /* Hidden initially */
-    transform: translateY(30px); /* Initial slide-down effect */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
-}
-
-/* Positioning of Benefits */
-.unique-benefit-1 { position: absolute; top: 20%; left: 30%; }
-.unique-benefit-2 { position: absolute; top: 40%; right: 15%; }
-.unique-benefit-3 { position: absolute; top: 80%; right: 25%; }
-.unique-benefit-4 { position: absolute; top: 60%; left: 20%; }
-.unique-benefit-5 { position: absolute; top: 5.0%; left: 40%; }
-.unique-benefit-6 { position: absolute; top: 15%; left: 70%; }
-.unique-benefit-7 { position: absolute; top: 60%; left: 60%; }
-
-/* When the benefit is in view */
-.unique-tree-benefit.in-view {
-    opacity: 1; /* Make it visible */
-    transform: translateY(0); /* Slide to final position */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .unique-tree-svg { display: none; } /* Hide tree on small screens */
-    .unique-tree-benefit { font-size: 1rem; padding: 8px 12px; } /* Adjust font size and padding */
-}
-
-
-/* Specific Section Margins */
-.unique-about-plants-section {
-    margin-bottom: 20px; /* Increase bottom margin for this section */
-}
-
-.unique-benefits-trees-section {
-    margin-top: 20px; /* Add top margin for this section */
-}
-
-
-/* Unique Benefits of Trees Section */
-.unique-benefits-trees-section {
-    background-color: #3B3291;
-    padding: 50px;
-    position: relative;
-    color: #f0f0f0;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 260vh; /* Use min-height instead */
-    margin-top: 10px; /* Add top margin */
-    margin-left: -50px;    
-    margin-bottom: -100px;
-    
-}
 

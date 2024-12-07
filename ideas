@@ -106,6 +106,1237 @@ If implementing a leaderboard, use a simple back-end service (such as Firebase) 
 
 
 
+<!-- plants card section making some changes .......... -->
 
 
 
+
+html part
+
+
+
+<section class="plants" id="Gallery">
+    <h1 class="section-title"> <div class="trees-svg">
+        <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect x="45" y="70" width="10" height="20" fill="saddlebrown" />
+            <circle cx="50" cy="50" r="20" fill="green" />
+            <circle cx="35" cy="50" r="15" fill="green" />
+            <circle cx="65" cy="50" r="15" fill="green" />
+        </svg>
+    </div>Plants in the Dense Forest <div class="trees-svg">
+        <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect x="45" y="70" width="10" height="20" fill="saddlebrown" />
+            <circle cx="50" cy="50" r="20" fill="green" />
+            <circle cx="35" cy="50" r="15" fill="green" />
+            <circle cx="65" cy="50" r="15" fill="green" />
+        </svg>
+    </div></h1>
+    
+    <div class="plants-container">
+       <!-- Plant Card 1 -->
+<div class="plant-card">
+    <div class="plant-image">
+        <img src="assets/NeemTree.JPG" alt="Neem Plant">
+    </div>
+    <div class="plant-info">
+        <h2>🌿 Plant Name: Neem</h2>
+        <h3>📚 Scientific Name: Azadirachta indica</h3>
+        <button class="view-more">🔍 View More</button>
+    </div>
+</div>
+
+
+<!-- Plant Card 2 -->
+<div class="plant-card">
+    <div class="plant-image">
+        <img src="assets/tulsi.JPG" alt="Tulsi Plant">
+    </div>
+    <div class="plant-info">
+        <h2>🌿 Plant Name: Tulsi</h2>
+        <h3>📚 Scientific Name: Ocimum tenuiflorum</h3>
+        <button class="view-more">🔍 View More</button>
+    </div>
+</div>
+
+
+
+<!-- Plant Card 3 -->
+<div class="plant-card">
+    <div class="plant-image">
+        <img src="assets/sagvan.JPG" alt="Teak Plant">
+    </div>
+    <div class="plant-info">
+        <h2>🌳 Plant Name: Teak</h2>
+        <h3>📚 Scientific Name: Tectona grandis</h3>
+        <button class="view-more">🔍 View More</button>
+    </div>
+</div>
+
+<!-- Plant Card 4 -->
+<div class="plant-card">
+    <div class="plant-image">
+        <img src="assets/poison sumac.JPG" alt="Bhoma Plant">
+    </div>
+    <div class="plant-info">
+        <h2>🌿 Plant Name: Bhoma</h2>
+        <h3>📚 Scientific Name: Glochidion ellipticum</h3>
+        <button class="view-more">🔍 View More</button>
+    </div>
+</div>
+
+
+
+<!-- Plant Card 5 -->
+<div class="plant-card">
+    <div class="plant-image">
+        <img src="assets/banyan.jpg" alt="Banyan Plant">
+    </div>
+    <div class="plant-info">
+        <h2>🌳 Plant Name: Banyan</h2>
+        <h3>📚 Scientific Name: Ficus benghalensis</h3>
+        <button class="view-more">🔍 View More</button>
+    </div>
+</div>
+
+
+
+<!-- Plant Card 6 -->
+<div class="plant-card">
+    <div class="plant-image">
+        <img src="assets/jackfruit.JPG" alt="Jackfruit Plant">
+    </div>
+    <div class="plant-info">
+        <h2>🌳 Plant Name: Jackfruit</h2>
+        <h3>📚 Scientific Name: Artocarpus heterophyllus</h3>
+        <button class="view-more">🔍 View More</button>
+    </div>
+</div>
+
+
+<!-- Plant Card 7 -->
+<div class="plant-card">
+    <div class="plant-image">
+        <img src="assets/peepal tree.JPG" alt="Peepal Tree">
+    </div>
+    <div class="plant-info">
+        <h2>🌳 Plant Name: PeepalTree</h2>
+        <h3>📚 Scientific Name: Ficus religiosa</h3>
+        <button class="view-more">🔍 View More</button>
+    </div>
+</div>
+
+<!-- Plant Card 8 -->
+<div class="plant-card">
+    <div class="plant-image">
+        <img src="assets/Pomegranet.JPG" alt="Pomegranate Plant">
+    </div>
+    <div class="plant-info">
+        <h2>🍎 Plant Name: Pomegranate</h2>
+        <h3>📚 Scientific Name: Punica granatum</h3>
+        <button class="view-more">🔍 View More</button>
+    </div>
+</div>
+
+
+
+<!-- Plant Card 9 -->
+<div class="plant-card">
+    <div class="plant-image">
+        <img src="assets/champak.JPG" alt="Champak Plant">
+    </div>
+    <div class="plant-info">
+        <h2>🌼 Plant Name: Champak</h2>
+        <h3>📚 Scientific Name: Plumeria alba</h3>
+        <button class="view-more">🔍 View More</button>
+    </div>
+</div>
+
+<!-- Plant Card 10 -->
+<div class="plant-card">
+    <div class="plant-image">
+        <img src="assets/panama rubber.JPG" alt="Panama Rubber Tree">
+    </div>
+    <div class="plant-info">
+        <h2>🌳 Plant Name: PanamaRubberTree</h2>
+        <h3>📚 Scientific Name: Castilla elastica</h3>
+        <button class="view-more">🔍 View More</button>
+    </div>
+</div>
+
+
+<!-- Plant Card 11 -->
+<div class="plant-card">
+    <div class="plant-image">
+        <img src="assets/burflower.JPG" alt="Burflower (Kadam) Plant">
+    </div>
+    <div class="plant-info">
+        <h2>🌸 Plant Name: Burflower</h2>
+        <h3>📚 Scientific Name: Neolamarckia cadamba</h3>
+        <button class="view-more">🔍 View More</button>
+    </div>
+</div>
+
+<!-- Plant Card 12 -->
+<div class="plant-card">
+    <div class="plant-image">
+        <img src="assets/sona.jpg" alt="Bauhinia forficata Plant">
+    </div>
+    <div class="plant-info">
+        <h2>🌿 Plant Name: BauhiniaForficata</h2>
+        <h3>📚 Scientific Name: Bauhinia forficata</h3>
+        <button class="view-more">🔍 View More</button>
+    </div>
+</div>
+
+<!-- Plant Card 13 -->
+<div class="plant-card">
+    <div class="plant-image">
+        <img src="assets/fanas.jpg" alt="Mangifera caesia Plant">
+    </div>
+    <div class="plant-info">
+        <h2>🥭 Plant Name: MangiferaCaesia</h2>
+        <h3>📚 Scientific Name: Mangifera caesia</h3>
+        <button class="view-more">🔍 View More</button>
+    </div>
+</div>
+
+<!-- Plant Card 14 -->
+<div class="plant-card">
+    <div class="plant-image">
+        <img src="assets/godnimbu.jpg" alt="Curry Tree Plant">
+    </div>
+    <div class="plant-info">
+        <h2>🌿 Plant Name: CurryTree</h2>
+        <h3>📚 Scientific Name: Murraya koenigii</h3>
+        <button class="view-more">🔍 View More</button>
+    </div>
+</div>
+
+<!-- Plant Card 15 -->
+<div class="plant-card">
+    <div class="plant-image">
+        <img src="assets/mango.jpg" alt="Mango Plant">
+    </div>
+    <div class="plant-info">
+        <h2>🥭 Plant Name: Mango</h2>
+        <h3>📚 Scientific Name: Mangifera indica</h3>
+        <button class="view-more">🔍 View More</button>
+    </div>
+</div>
+<!-- Plant Card 16 -->
+<div class="plant-card">
+    <div class="plant-image">
+        <img src="assets/babul.jpg" alt="Albizia chinensis Plant">
+    </div>
+    <div class="plant-info">
+        <h2>🌳 Plant Name: AlbiziaChinensis</h2>
+        <h3>📚 Scientific Name: Albizia chinensis</h3>
+        <button class="view-more">🔍 View More</button>
+    </div>
+</div>
+
+
+        
+
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Additional Information</h2>
+            <div id="additional-info"></div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+     <!-- Plants Section ends here... -->  
+
+
+
+
+
+
+
+<!-- css part -->
+
+/* Section Styling */
+.plants {
+    padding: 60px 20px;
+    background-color: #3B3291;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 50px;
+}
+
+.section-title {
+    font-size: 4.5rem;
+    margin-bottom: 40px;
+    color: green;
+}
+
+/* Plants Container */
+.plants-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px; /* Space between cards */
+}
+
+/* Plant Card Layout */
+.plant-card {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    background: #3B3291;
+    color: #eaed22;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* Four cards per row with space for gap */
+    position: relative; /* Needed for absolute positioning of the button */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow transition */
+}
+
+.plant-image img {
+    width: 100%;
+    height: 445.333px;
+}
+
+.plant-info {
+    padding: 20px;
+    flex-grow: 1; /* Allow this section to grow and fill space */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Space between content and button */
+}
+
+/* Hover effect for plant cards */
+.plant-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow depth on hover */
+}
+
+/* Fixed View More Button */
+.view-more {
+    background-color: #1ee72c;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto; /* Push the button to the bottom */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.view-more:hover {
+    background-color: #5a49b7;
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+    justify-content: center; /* Center the modal */
+    align-items: center; /* Center the modal */
+}
+
+.modal-content {
+    background-color: #1c7cac;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px; /* Max width for the modal */
+    opacity: 0; /* Start hidden */
+    transform: scale(0.8); /* Start scaled down */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transition effects */
+}
+
+.modal-content.show {
+    opacity: 1; /* Fade in */
+    transform: scale(1); /* Scale up */
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .plant-card {
+        width: calc(50% - 20px); /* Two cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .plant-card {
+        width: calc(100% - 20px); /* One card per row on very small screens */
+    }
+}
+
+/* Section Title Layout */
+.section-title {
+    display: flex;
+    align-items: center; /* Vertically center-align items */
+    justify-content: center; /* Horizontally center-align items */
+    gap: 10px; /* Adds space between SVG and text */
+}
+
+.trees-svg {
+    display: inline-block; /* Ensures the SVG is treated as an inline element */
+    margin-right: 10px; /* Adds space between the SVG and the text */
+}
+
+
+
+
+
+<!-- js part -->
+
+
+
+// JavaScript for the modal functionality
+const modal = document.getElementById('modal');
+const viewMoreButtons = document.querySelectorAll('.view-more');
+const closeButton = document.querySelector('.close');
+const additionalInfoDiv = document.getElementById('additional-info');
+
+// Sample additional information for each plant
+const additionalInfo = {
+    Neem: `
+    <h3>🌿 Plant Name: Neem</h3>
+    <h4>📝 Description:</h4>
+    <p>Neem is highly valued for its medicinal and agricultural uses. It can grow up to 20-30 meters in height.</p>
+    <h4>🌿 Habitat:</h4>
+    <p>Neem trees are typically found in tropical and semi-tropical regions. They thrive in sunlight and are often found in open fields.</p>
+    <h4>🌟 Interesting Facts:</h4>
+    <ul>
+        <li>🌱 Neem has natural antibacterial, antiviral, and antifungal properties.</li>
+        <li>🌿 Neem oil is used in cosmetics, medicines, and as a natural pesticide.</li>
+        <li>🍃 Leaves are used in remedies for skin conditions.</li>
+    </ul>
+    <h4>⚠️ Conservation Status:</h4>
+    <p>Neem is not endangered and is widely cultivated in many regions due to its versatility and resilience.</p>
+`,
+
+Tulsi: `
+    <h3>🌿 Plant Name: Tulsi</h3>
+    <h4>📝 Description:</h4>
+    <p>Tulsi is known for its medicinal properties and spiritual significance in Indian culture. It is often found in households and temples.</p>
+    <h4>🌿 Habitat:</h4>
+    <p>Tulsi thrives in warm, tropical climates and is native to India and Southeast Asia.</p>
+    <h4>🌟 Interesting Facts:</h4>
+    <ul>
+        <li>🌱 Tulsi leaves are used to treat various ailments like colds and respiratory disorders.</li>
+        <li>🍃 It is regarded as a sacred plant in Hinduism and is often used in rituals.</li>
+        <li>🌍 Tulsi is known as the “Queen of Herbs” due to its wide-ranging health benefits.</li>
+    </ul>
+    <h4>⚠️ Conservation Status:</h4>
+    <p>Tulsi is not endangered and is widely cultivated across the Indian subcontinent.</p>
+`,
+
+Teak: `
+    <h3>🌳 Plant Name: Teak (सागवन)</h3>
+    <h4>📝 Description:</h4>
+    <p>Teak is prized for its high-quality timber, which is durable and resistant to decay. It is widely used in furniture and shipbuilding.</p>
+    <h4>🌿 Habitat:</h4>
+    <p>Teak trees are found in mixed hardwood forests, typically in Southeast Asia, especially India, Myanmar, and Thailand.</p>
+    <h4>🌟 Interesting Facts:</h4>
+    <ul>
+        <li>🪵 Teak wood is famous for its natural oils, making it water-resistant.</li>
+        <li>🌱 The tree can grow up to 40 meters tall and live for hundreds of years.</li>
+        <li>🚢 Historically, it was used in shipbuilding due to its durability and resistance to water.</li>
+    </ul>
+    <h4>⚠️ Conservation Status:</h4>
+    <p>Teak is not endangered, but sustainable forestry practices are needed to ensure its long-term availability.</p>
+`,
+
+Bhoma: `
+    <h3>🌿 Plant Name: Bhoma (Konkani)</h3>
+    <h4>📝 Description:</h4>
+    <p>Bhoma, scientifically known as Glochidion ellipticum, is a tropical plant used in traditional medicine for its various health benefits. It grows as a shrub or small tree.</p>
+    <h4>🌿 Habitat:</h4>
+    <p>This plant is commonly found in the forests of the Western Ghats and thrives in tropical and subtropical climates.</p>
+    <h4>🌟 Interesting Facts:</h4>
+    <ul>
+        <li>🍃 Bhoma is used in folk medicine for treating digestive and skin ailments.</li>
+        <li>🌱 The plant plays a role in maintaining the ecological balance in its native habitats.</li>
+        <li>🍈 It produces small fruits that are sometimes consumed locally.</li>
+    </ul>
+    <h4>⚠️ Conservation Status:</h4>
+    <p>Bhoma is not widely cultivated and is typically found in the wild, but it is not considered endangered.</p>
+`,
+
+
+Banyan: `
+    <h3>🌳 Plant Name: Banyan</h3>
+    <h4>📝 Description:</h4>
+    <p>The Banyan tree is known for its expansive canopy and aerial roots, which allow it to spread over large areas. It can grow to immense sizes and live for centuries.</p>
+    <h4>🌿 Habitat:</h4>
+    <p>The Banyan thrives in tropical and subtropical climates and is commonly found in India, Bangladesh, and Sri Lanka.</p>
+    <h4>🌟 Interesting Facts:</h4>
+    <ul>
+        <li>🌳 The Banyan tree is considered sacred in many cultures and is often associated with longevity and shelter.</li>
+        <li>🌱 Its aerial roots grow downwards and become new trunks, allowing the tree to spread wide.</li>
+        <li>🏞️ The largest Banyan tree can cover several acres, with its branches and roots forming a forest-like structure.</li>
+    </ul>
+    <h4>⚠️ Conservation Status:</h4>
+    <p>The Banyan tree is not endangered and is widely respected and protected in many parts of India due to its cultural significance.</p>
+`,
+Jackfruit: `
+    <h3>🌳 Plant Name: Jackfruit</h3>
+    <h4>📝 Description:</h4>
+    <p>The Jackfruit tree produces the largest fruit in the world, with some fruits weighing up to 40 kg. It is highly valued for its edible fruit and wood.</p>
+    <h4>🌿 Habitat:</h4>
+    <p>Jackfruit trees are commonly found in tropical and subtropical regions, particularly in South and Southeast Asia, thriving in humid and warm climates.</p>
+    <h4>🌟 Interesting Facts:</h4>
+    <ul>
+        <li>🍈 The fruit is used in a variety of dishes, both ripe and unripe, across many Asian cuisines.</li>
+        <li>🌳 Jackfruit wood is durable and often used in furniture making and musical instruments.</li>
+        <li>🍃 The seeds are also edible and can be roasted or boiled for consumption.</li>
+    </ul>
+    <h4>⚠️ Conservation Status:</h4>
+    <p>Jackfruit is not endangered and is cultivated widely in tropical regions for its fruit and timber.</p>
+`,
+PeepalTree: `
+<h3>🌳 Plant Name: Peepal Tree</h3>
+<h4>📝 Description:</h4>
+<p>The Peepal tree, also known as the sacred fig, is highly revered in various cultures and holds deep religious significance. It is known for its heart-shaped leaves.</p>
+<h4>🌿 Habitat:</h4>
+<p>The Peepal tree is commonly found in tropical and subtropical regions, particularly in India, Nepal, and Sri Lanka, thriving in a wide range of environments.</p>
+<h4>🌟 Interesting Facts:</h4>
+<ul>
+    <li>🌿 The Buddha is said to have attained enlightenment under a Peepal tree.</li>
+    <li>🌱 Peepal trees are known to release oxygen even at night, unlike most plants.</li>
+    <li>💊 The bark, leaves, and roots of the tree are used in traditional medicine for various ailments.</li>
+</ul>
+<h4>⚠️ Conservation Status:</h4>
+<p>The Peepal tree is not endangered and is widely planted for its religious, environmental, and medicinal benefits.</p>
+`,
+Pomegranate: `
+    <h3>🍎 Plant Name: Pomegranate (डाळिंब)</h3>
+    <h4>📝 Description:</h4>
+    <p>Pomegranate is known for its bright red fruit, packed with juicy seeds called arils. It has been cultivated since ancient times for its nutritional and medicinal properties.</p>
+    <h4>🌿 Habitat:</h4>
+    <p>Pomegranate trees thrive in warm, dry regions and are typically found in Mediterranean climates, as well as parts of Asia and the Middle East.</p>
+    <h4>🌟 Interesting Facts:</h4>
+    <ul>
+        <li>🍎 Pomegranates are rich in antioxidants and are considered a superfood for their health benefits.</li>
+        <li>🌸 The plant’s flowers are vibrant red and highly decorative.</li>
+        <li>💊 Pomegranate extracts are used in traditional medicine for their anti-inflammatory and anti-cancer properties.</li>
+    </ul>
+    <h4>⚠️ Conservation Status:</h4>
+    <p>Pomegranate trees are widely cultivated and are not considered endangered.</p>
+`,
+Champak: `
+    <h3>🌼 Plant Name: Champak (White चाफा)</h3>
+    <h4>📝 Description:</h4>
+    <p>Champak, also known as Plumeria alba, is a small tree or shrub known for its beautiful, fragrant white flowers, often associated with religious significance.</p>
+    <h4>🌿 Habitat:</h4>
+    <p>This tree thrives in tropical and subtropical climates, commonly found in gardens and parks across Southeast Asia and India.</p>
+    <h4>🌟 Interesting Facts:</h4>
+    <ul>
+        <li>🌺 The flowers are often used in making garlands and other floral decorations.</li>
+        <li>🍃 The leaves are thick and can grow up to 30 cm long, providing a lush appearance.</li>
+        <li>💧 The sap of the tree is used in traditional medicine for its healing properties.</li>
+    </ul>
+    <h4>⚠️ Conservation Status:</h4>
+    <p>Champak trees are not endangered and are cultivated in many tropical regions for their ornamental value.</p>
+`,
+PanamaRubberTree: `
+    <h3>🌳 Plant Name: Panama Rubber Tree</h3>
+    <h4>📝 Description:</h4>
+    <p>The Panama Rubber Tree, scientifically known as Castilla elastica, is a large tree famous for its latex, which is used in the production of rubber.</p>
+    <h4>🌿 Habitat:</h4>
+    <p>This tree thrives in tropical rainforests, commonly found in Central and South America, where it prefers well-drained soils and high humidity.</p>
+    <h4>🌟 Interesting Facts:</h4>
+    <ul>
+        <li>🌱 The latex extracted from this tree is used in various applications, including adhesives and coatings.</li>
+        <li>🌳 It can grow up to 30 meters tall and is valued for its strong, straight trunk.</li>
+        <li>💧 The tree requires a warm climate with consistent rainfall to grow optimally.</li>
+    </ul>
+    <h4>⚠️ Conservation Status:</h4>
+    <p>The Panama Rubber Tree is not considered endangered and is cultivated in several regions for its latex and timber.</p>
+`,
+Burflower: `
+    <h3>🌸 Plant Name: Burflower (Kadam)</h3>
+    <h4>📝 Description:</h4>
+    <p>The Burflower, or Kadam, is a large tree known for its beautiful, fragrant flowers that attract pollinators and add charm to tropical landscapes.</p>
+    <h4>🌿 Habitat:</h4>
+    <p>This tree thrives in tropical forests and is commonly found in parts of Southeast Asia and India, preferring well-drained soils.</p>
+    <h4>🌟 Interesting Facts:</h4>
+    <ul>
+        <li>🌼 The flowers are used in traditional ceremonies and are considered auspicious in many cultures.</li>
+        <li>🍃 The wood of the Kadam tree is utilized for making furniture and other wooden products.</li>
+        <li>💧 The tree is known for its ability to grow quickly and adapt to various soil types.</li>
+    </ul>
+    <h4>⚠️ Conservation Status:</h4>
+    <p>The Burflower tree is not endangered and is widely cultivated for its ornamental value and timber.</p>
+`,
+BauhiniaForficata: `
+    <h3>🌿 Plant Name: Bauhinia forficata</h3>
+    <h4>📝 Description:</h4>
+    <p>Bauhinia forficata is a deciduous tree known for its striking white flowers and is often used in traditional medicine to treat diabetes and other ailments.</p>
+    <h4>🌿 Habitat:</h4>
+    <p>This tree is native to South America, particularly Brazil, and prefers tropical and subtropical climates.</p>
+    <h4>🌟 Interesting Facts:</h4>
+    <ul>
+        <li>🌸 Its beautiful, orchid-like flowers make it a popular ornamental tree.</li>
+        <li>💊 Bauhinia forficata is known for its antidiabetic properties and is used in herbal remedies.</li>
+        <li>🌱 It grows up to 5-10 meters tall and thrives in warm, humid environments.</li>
+    </ul>
+    <h4>⚠️ Conservation Status:</h4>
+    <p>Bauhinia forficata is not endangered and is widely cultivated for its medicinal and ornamental uses.</p>
+`,
+MangiferaCaesia: `
+    <h3>🥭 Plant Name: Mangifera caesia</h3>
+    <h4>📝 Description:</h4>
+    <p>Mangifera caesia is a tropical fruit tree native to Southeast Asia, known for its large, sweet, and fragrant fruit, often referred to as "white mango."</p>
+    <h4>🌿 Habitat:</h4>
+    <p>This tree is found in tropical forests and cultivated in regions like Indonesia, Malaysia, and the Philippines. It thrives in warm, humid climates with well-drained soil.</p>
+    <h4>🌟 Interesting Facts:</h4>
+    <ul>
+        <li>🍈 The fruit of Mangifera caesia is used in various traditional dishes and can be eaten fresh or used in jams and desserts.</li>
+        <li>🌱 The tree can grow up to 30 meters tall and produces a large canopy, providing ample shade.</li>
+        <li>💧 It prefers tropical conditions and requires plenty of rainfall to produce its best fruit.</li>
+    </ul>
+    <h4>⚠️ Conservation Status:</h4>
+    <p>Mangifera caesia is not endangered and is widely cultivated in tropical regions for its fruit.</p>
+`,
+
+CurryTree: `
+    <h3>🌿 Plant Name: Curry Tree</h3>
+    <h4>📝 Description:</h4>
+    <p>Murraya koenigii, commonly known as the Curry Tree, is a tropical to sub-tropical tree whose leaves are a key ingredient in many South Asian dishes, known for their aromatic and flavorful profile.</p>
+    <h4>🌿 Habitat:</h4>
+    <p>The Curry Tree is native to the Indian subcontinent and thrives in tropical and subtropical regions. It is often grown in home gardens for culinary purposes.</p>
+    <h4>🌟 Interesting Facts:</h4>
+    <ul>
+        <li>🍛 The leaves are used in curries, soups, and other dishes, adding a unique flavor.</li>
+        <li>🌱 It can be grown as a small shrub or tree, reaching up to 6 meters in height.</li>
+        <li>🌿 The leaves have medicinal properties and are used in traditional medicine for digestion and diabetes.</li>
+    </ul>
+    <h4>⚠️ Conservation Status:</h4>
+    <p>The Curry Tree is not endangered and is widely cultivated for its leaves and medicinal properties.</p>
+`,
+Mango: `
+    <h3>🥭 Plant Name: Mango</h3>
+    <h4>📝 Description:</h4>
+    <p>Mangifera indica, commonly known as the Mango tree, is famous for producing one of the most popular fruits in the world. The mango is sweet, juicy, and highly nutritious.</p>
+    <h4>🌿 Habitat:</h4>
+    <p>The Mango tree is native to South Asia and thrives in tropical and subtropical climates. It is now cultivated in many parts of the world, including Africa, the Americas, and Southeast Asia.</p>
+    <h4>🌟 Interesting Facts:</h4>
+    <ul>
+        <li>🍈 The fruit is rich in vitamins A and C, making it a nutritious snack.</li>
+        <li>🌳 Mango trees can grow up to 30-40 meters tall and live for centuries.</li>
+        <li>🍴 Mangoes are used in a variety of dishes, from fresh salads to smoothies and desserts.</li>
+    </ul>
+    <h4>⚠️ Conservation Status:</h4>
+    <p>Mango trees are not endangered and are widely cultivated for their fruit worldwide.</p>
+`,
+AlbiziaChinensis: `
+    <h3>🌳 Plant Name: Albizia chinensis</h3>
+    <h4>📝 Description:</h4>
+    <p>Albizia chinensis is a large deciduous tree, known for its spreading crown and rapid growth, commonly used for shade, reforestation, and timber production.</p>
+    <h4>🌿 Habitat:</h4>
+    <p>This tree is native to Southeast Asia and grows in tropical and subtropical regions, thriving in forests and alongside rivers.</p>
+    <h4>🌟 Interesting Facts:</h4>
+    <ul>
+        <li>🌱 Albizia chinensis is often used in agroforestry systems for its ability to enrich the soil.</li>
+        <li>🌳 It can reach a height of up to 30 meters with a wide, umbrella-like crown.</li>
+        <li>🪵 Its timber is used in furniture making, while the tree also provides shade in plantations.</li>
+    </ul>
+    <h4>⚠️ Conservation Status:</h4>
+    <p>Albizia chinensis is not endangered and is widely planted for timber and reforestation efforts.</p>
+`
+
+
+
+
+};
+
+// Function to open the modal with relevant information
+viewMoreButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+        const plantName = event.target.parentElement.querySelector('h2').textContent.split(': ')[1]; // Extract plant name
+        additionalInfoDiv.innerHTML = additionalInfo[plantName] || '<p>Information not available.</p>'; // Get additional info for the plant
+        modal.style.display = 'flex'; // Show the modal
+        setTimeout(() => {
+            document.querySelector('.modal-content').classList.add('show'); // Fade in the modal content
+        }, 10);
+    });
+});
+
+// Close the modal when the user clicks on <span> (x)
+closeButton.onclick = function() {
+    document.querySelector('.modal-content').classList.remove('show'); // Fade out the modal content
+    setTimeout(() => {
+        modal.style.display = 'none'; // Hide the modal after fade out
+    }, 300); // Match the duration of the fade out effect
+}
+
+// Close the modal when clicking anywhere outside of the modal
+window.onclick = function(event) {
+    if (event.target === modal) {
+        document.querySelector('.modal-content').classList.remove('show'); // Fade out the modal content
+        setTimeout(() => {
+            modal.style.display = 'none'; // Hide the modal after fade out
+        }, 300); // Match the duration of the fade out effect
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Plant Card Layout */
+.plant-card {
+    flex: 1 1 calc(25% - 20px); /* Ensure 4 cards per row with space for gaps */
+    background: #3B3291;
+    color: #060603;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow transition */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    max-width: 300px; /* Optional: Prevent cards from becoming too wide */
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- importance section -->
+
+<!-- html part
+  -->
+  <section class="importance">
+    <div class="about-vision mission-vision-section scroll-animate">
+        <div class="vision-container">
+            <div class="vision-header">
+                <h2>Importance Of Forest 🌍🌲</h2>
+                <p>🌿 The Dense Forest Initiative is dedicated to the preservation, restoration, and sustainable management of forest ecosystems. Here's why forests matter: 🌳🌱</p>
+            </div>
+    
+            <div class="vision-content">
+                <div class="vision-item" id="ecological-importance">
+                    <div class="icon-container">🌳</div>
+                    <h3>1. Ecological Importance 🐾🦋</h3>
+                    <p>🌲 Forests are home to over 80% of the terrestrial species of animals, plants, and fungi. 🐒🌸 They play a critical role in maintaining biodiversity, fostering ecological balance, and promoting resilience against climate change. 🌍🦎</p>
+                </div>
+    
+                <div class="vision-item" id="climate-regulation">
+                    <div class="icon-container">🌍</div>
+                    <h3>2. Climate Regulation 🌡️🌦️</h3>
+                    <p>🌱 Forests absorb carbon dioxide, helping mitigate global warming. They act as carbon sinks and influence local weather patterns, making them essential for climate stability. 🌬️🌤️</p>
+                </div>
+    
+                <div class="vision-item" id="water-cycle">
+                    <div class="icon-container">💧</div>
+                    <h3>3. Water Cycle Management 🚰💦</h3>
+                    <p>🌧️ Forests absorb rainfall and release water vapor, maintaining groundwater levels and helping prevent floods, essential for clean water supply. 🚿💧</p>
+                </div>
+    
+                <div class="vision-item" id="soil-health">
+                    <div class="icon-container">🌱</div>
+                    <h3>4. Soil Health and Erosion Control 🌍🌾</h3>
+                    <p>🌳 The roots of trees prevent soil erosion, improve soil health, and support nutrient cycling, which is vital for agriculture. 🐛🌻</p>
+                </div>
+    
+                <div class="vision-item" id="economic-benefits">
+                    <div class="icon-container">💼</div>
+                    <h3>5. Economic Benefits 📈🌿</h3>
+                    <p>🌲 Forests provide resources like timber and eco-tourism opportunities, generating jobs and supporting livelihoods through sustainable practices. 💼🌱</p>
+                </div>
+    
+                <div class="vision-item" id="cultural-significance">
+                    <div class="icon-container">🛖</div>
+                    <h3>6. Cultural Significance 🌏🪶</h3>
+                    <p>🛖 For indigenous communities, forests hold cultural and spiritual value, providing food, medicine, and materials necessary for traditional lifestyles. 🌿🍃</p>
+                </div>
+    
+                <div class="vision-item" id="education-research">
+                    <div class="icon-container">📚</div>
+                    <h3>7. Education and Research 🎓🔬</h3>
+                    <p>📖 Forests serve as living laboratories for studying biodiversity and conservation, informing better management and protection strategies. 🌳🔍</p>
+                </div>
+                
+                <div class="vision-item" id="community-engagement">
+                    <div class="icon-container">🤝</div>
+                    <h3>8. Community Engagement 🌎💬</h3>
+                    <p>🌍 We believe in empowering local communities to participate in sustainable forestry practices. By fostering collaboration and education, we aim to create a stewardship culture that respects and preserves our natural resources. 🌲🤝</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- html part ends here -->
+
+
+<!-- mission and vision section -->
+/* Mission and vision section styling */
+.mission-vision-section {
+    background-color: #3B3291;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    animation: fadeIn 1s ease; /* Fade in effect */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5); /* Shadow for depth */
+}
+
+
+.about-vision {
+padding: 50px 20px;
+background-color: #3B3291;
+font-family: 'Arial', sans-serif;
+color: #333;
+text-align: center;
+position: relative;
+overflow: hidden;
+margin-bottom: 0px;
+}
+
+.vision-container {
+max-width: 1500px;
+margin: 0 auto;
+margin-top: 20px;
+}
+
+.vision-header h2 {
+font-size: 2.8rem;
+margin-bottom: 00px;
+color: #d3f6f6;
+animation: fadeInDown 1s ease;
+}
+
+.vision-header p {
+font-size: 1.2rem;
+margin-bottom: 40px;
+color: #e9dbdb;
+}
+
+.vision-content {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 30px;
+padding: 20px 0;
+animation: fadeInUp 1s ease-in-out;
+}
+
+.vision-item {
+background-color: rgba(255, 255, 255, 0.1);
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease, background-color 0.3s ease;
+position: relative;
+text-align: left;
+}
+
+.vision-item:hover {
+transform: translateY(-10px);
+background-color: #e6f5f5;
+}
+
+.vision-item h3 {
+font-size: 1.6rem;
+margin: 20px 0;
+color: #333;
+}
+
+.vision-item p {
+font-size: 1rem;
+color: #666;
+}
+
+.icon-container {
+font-size: 2.5rem;
+color: #66bfbf;
+margin-bottom: 15px;
+}
+
+.cta-section {
+margin-top: 40px;
+padding: 20px;
+background-color: #3B3291;
+border-radius: 10px;
+color: white;
+font-size: 1.3rem;
+animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+from {
+    opacity: 0;
+    transform: translateY(30px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+@keyframes fadeInDown {
+from {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+@keyframes fadeIn {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+
+@media (max-width: 768px) {
+.vision-content {
+    grid-template-columns: 1fr;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- final importance -->
+
+
+
+<!-- importance section -->
+<section class="vision-content">
+
+    <div class="vision-item" id="ecological-importance" 
+    data-image="images/ecological-importance.jpg" 
+    data-title="Ecological Importance" 
+    data-description="Forests are essential to our planet's ecological health. They support biodiversity, regulate the water cycle, and act as carbon sinks, mitigating climate change."
+    data-key-points="Supports 80% of terrestrial species, Provides habitats, Maintains biodiversity"
+    data-additional-info="Forests also prevent soil erosion and act as natural water filters. By absorbing rainfall, they ensure a stable water supply and reduce the risks of floods. Many medicinal plants found in forests are the foundation of traditional and modern medicine.">
+    <div class="icon-container">🌳</div>
+    <h3>1. Ecological Importance 🐾🦋</h3>
+    <p>🌲 Forests are home to over 80% of the terrestrial species of animals, plants, and fungi. 🐒🌸 They play a critical role in maintaining biodiversity...</p>
+   </div>
+
+<div class="vision-item" id="climate-regulation" 
+    data-image="images/climate-regulation.jpg" 
+    data-title="Climate Regulation" 
+    data-description="Forests play a crucial role in regulating the Earth's climate. They absorb carbon dioxide, a major greenhouse gas, and store it in biomass, thus mitigating global warming." 
+    data-key-points="Carbon sequestration, Regulates temperature, Influences rainfall patterns"
+    data-additional-info="Forests store nearly 300 billion tons of carbon in their living parts and act as carbon sinks. They also help in reducing the heat island effect in urban areas by providing shade and cool air. Forests release oxygen as part of photosynthesis, making them the lungs of our planet.">
+    <div class="icon-container">🌦️</div>
+    <h3>2. Climate Regulation 🌍</h3>
+    <p>Forests are essential for absorbing CO2 and regulating global temperatures...</p>
+   </div>
+
+
+   <div class="vision-item" id="water-cycle" 
+    data-image="images/water-cycle-management.jpg" 
+    data-title="Water Cycle Management" 
+    data-description="Forests play an important role in the water cycle by absorbing rainfall, storing water in their soil, and releasing it back into the atmosphere through transpiration and evaporation." 
+    data-key-points="Water storage, Flood prevention, Groundwater recharge"
+    data-additional-info="Forests are key in maintaining the water cycle. They help regulate water availability throughout the year by ensuring groundwater levels are replenished and preventing flash floods. Trees and plants absorb rainfall, and through their roots, they store it in the soil. The water then enters the atmosphere via transpiration, which helps in regulating the local climate and precipitation patterns. Additionally, forests play a vital role in ensuring clean water supply by filtering and purifying water before it reaches rivers and lakes.">
+   <div class="icon-container">💧</div>
+   <h3>3. Water Cycle Management 🚰</h3>
+   <p>Forests regulate water flow by absorbing rainfall, preventing floods, and ensuring clean water supply...</p>
+</div>
+
+
+<div class="vision-item" id="soil-health" 
+    data-image="images/soil-health.jpg" 
+    data-title="Soil Health and Erosion Control" 
+    data-description="Forests prevent soil erosion, improve soil quality, and support nutrient cycling. Their roots help stabilize the soil, preventing landslides and maintaining fertile land for agriculture." 
+    data-key-points="Prevents erosion, Enhances soil fertility, Supports agriculture"
+    data-additional-info="The roots of trees and plants form a natural barrier that holds the soil in place, preventing erosion caused by wind and water. This is especially important in hilly and coastal regions where soil erosion can lead to landslides and flooding. In addition to preventing erosion, forests enrich the soil by cycling nutrients. Fallen leaves, branches, and other organic matter break down to create nutrient-rich soil, which supports agriculture and provides habitat for beneficial organisms like earthworms. Healthy forests contribute to maintaining agricultural productivity, ensuring sustainable food sources for communities.">
+   <div class="icon-container">🌱</div>
+   <h3>4. Soil Health and Erosion Control 🌍</h3>
+   <p>Forests help maintain soil fertility and prevent soil erosion, which is vital for sustainable agriculture...</p>
+</div>
+
+
+<div class="vision-item" id="economic-benefits" 
+    data-image="images/economic-benefits.jpg" 
+    data-title="Economic Benefits" 
+    data-description="Forests provide a wide range of economic benefits through sustainable resources such as timber, medicinal plants, and eco-tourism, while also creating jobs and supporting local economies." 
+    data-key-points="Timber production, Eco-tourism, Job creation"
+    data-additional-info="Forests are a vital source of income for many communities through the sustainable harvesting of timber, non-timber products, and eco-tourism activities. Timber is used in construction, paper production, and furniture-making industries, contributing to economic growth. In addition to this, eco-tourism has become a significant industry in forested areas, attracting visitors interested in nature, wildlife, and adventure activities. This generates revenue and creates employment opportunities for local populations. Furthermore, forests support a wide range of industries such as pharmaceuticals, with many medicinal plants being harvested from forests, which helps in the development of drugs and health treatments.">
+   <div class="icon-container">💼</div>
+   <h3>5. Economic Benefits 📈</h3>
+   <p>Forests are not just ecological assets but also major contributors to local and global economies...</p>
+</div>
+
+
+<div class="vision-item" id="cultural-significance" 
+    data-image="images/cultural-significance.jpg" 
+    data-title="Cultural Significance" 
+    data-description="Forests have immense cultural and spiritual importance for many indigenous communities around the world. They provide food, medicine, and materials necessary for traditional lifestyles." 
+    data-key-points="Spiritual value, Traditional medicine, Cultural heritage"
+    data-additional-info="For many indigenous cultures, forests are sacred spaces that hold deep spiritual significance. They are often seen as a source of life, a place for rituals, and a connection to ancestors. Beyond their spiritual role, forests provide essential resources for indigenous peoples, including food, medicinal plants, and materials for housing, clothing, and tools. Many plants and trees in forests are used in traditional healing practices, with their leaves, roots, and bark serving as remedies for various ailments. Forests also preserve cultural knowledge, as they are intertwined with the stories, traditions, and history of indigenous communities. Their preservation is crucial for maintaining both cultural identity and sustainable ways of life.">
+   <div class="icon-container">🛖</div>
+   <h3>6. Cultural Significance 🌏</h3>
+   <p>For indigenous communities, forests hold great spiritual, cultural, and practical importance...</p>
+</div>
+
+
+<div class="vision-item" id="education-research" 
+    data-image="images/education-research.jpg" 
+    data-title="Education and Research" 
+    data-description="Forests are essential for scientific research and environmental education, offering a living laboratory to study biodiversity, conservation, and sustainable management practices." 
+    data-key-points="Biodiversity studies, Conservation research, Environmental education"
+    data-additional-info="Forests provide unique opportunities for environmental research, serving as natural laboratories where scientists can study ecosystems, biodiversity, and climate change. They play a crucial role in understanding ecological processes and the effects of human activity on the environment. Researchers use forests to study plant and animal species, their interactions, and the impact of deforestation or reforestation. Forests also offer educational opportunities for students, researchers, and the general public, fostering awareness about the importance of nature conservation. Many universities and research institutions have forested areas dedicated to ecological studies, promoting sustainable forest management and biodiversity conservation. Through such studies, forests contribute valuable knowledge that helps shape environmental policies and conservation strategies globally.">
+   <div class="icon-container">📚</div>
+   <h3>7. Education and Research 🎓</h3>
+   <p>Forests are not only natural wonders but also key to advancing education and research in biodiversity, conservation, and sustainable practices...</p>
+</div>
+
+
+<div class="vision-item" id="community-engagement" 
+    data-image="images/community-engagement.jpg" 
+    data-title="Community Engagement" 
+    data-description="Community involvement in forest conservation helps ensure sustainable management, fosters awareness, and promotes collective action to preserve natural resources." 
+    data-key-points="Local participation, Sustainable forestry, Collaboration"
+    data-additional-info="Community engagement plays a critical role in the conservation and sustainable management of forests. By involving local communities in forest management practices, we ensure that the people who rely on forests for their livelihoods have a direct stake in their preservation. Local communities can actively contribute to reforestation efforts, help monitor deforestation, and advocate for policies that protect their natural resources. Engaging communities also fosters a sense of responsibility and ownership, which leads to more sustainable practices and better outcomes for both people and the environment. Education and training programs can help empower local people, particularly in rural areas, to understand the importance of sustainable forestry and environmental stewardship. Collaboration between government agencies, non-governmental organizations (NGOs), and local communities ensures a holistic approach to forest conservation that balances ecological, social, and economic needs.">
+   <div class="icon-container">🤝</div>
+   <h3>8. Community Engagement 🌎</h3>
+   <p>Empowering local communities to participate in sustainable forestry practices is key to long-term forest preservation...</p>
+</div>
+
+
+<div class="vision-item" id="cultural-significance" 
+    data-image="images/cultural-significance.jpg" 
+    data-title="Cultural Significance" 
+    data-description="Forests hold deep cultural and spiritual value for indigenous communities, providing materials, sustenance, and sacred spaces for traditional practices." 
+    data-key-points="Cultural heritage, Spiritual value, Indigenous knowledge"
+    data-additional-info="Forests have been a part of human history for thousands of years, and for many indigenous cultures, they are not just a source of livelihood but also a spiritual and cultural cornerstone. The connection between indigenous communities and forests is rooted in traditions, rituals, and sustainable practices passed down through generations. Forests provide essential resources, such as food, medicine, and materials for tools and shelter. They also serve as sacred spaces, with certain trees, plants, or areas considered spiritually significant. The traditional ecological knowledge held by indigenous people about forest ecosystems is invaluable for conservation and sustainable management efforts. Recognizing the cultural importance of forests is vital in promoting inclusive conservation strategies that respect the rights and traditions of indigenous peoples, ensuring that their knowledge and practices are integrated into modern environmental stewardship.">
+   <div class="icon-container">🛖</div>
+   <h3>6. Cultural Significance 🌏</h3>
+   <p>For indigenous communities, forests are deeply intertwined with cultural identity, providing vital resources for sustenance, tradition, and spiritual practices...</p>
+</div>
+
+
+   
+   
+   <div id="vision-modal" class="modal">
+       <div class="modal-content">
+           <div class="modal-left">
+               <h3 id="modal-title">Title Here</h3>
+           <p id="modal-description">Description goes here.</p>
+           
+           <h4>Key Points</h4>
+           <ul id="modal-key-points">
+               <!-- Dynamically added points -->
+           </ul>
+           
+           <h4>Additional Information</h4>
+           <p id="modal-additional-info">Additional details will appear here.</p>
+       </div>
+       <div class="modal-right">
+           <img id="modal-image" src="" alt="Related image">
+       </div>
+   </div>
+   <div class="modal-close" onclick="closeModal()">✖</div>
+</div>
+
+
+</section>
+<!-- importance sections ends here -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- vision improtance making some changes -->
+
+
+
+
+
+<!-- importance section -->
+<section class="vision-header">            <div class="visionn-header">
+    <h2>Importance Of Forest 🌍🌲</h2></div>
+    <section class="vision-content">
+        
+        
+        <div class="vision-item" id="ecological-importance" 
+        data-image="assets/babul.jpg" 
+        data-title="Ecological Importance" 
+        data-description="Forests are essential to our planet's ecological health. They support biodiversity, regulate the water cycle, and act as carbon sinks, mitigating climate change."
+        data-key-points="Supports 80% of terrestrial species, Provides habitats, Maintains biodiversity"
+        data-additional-info="Forests also prevent soil erosion and act as natural water filters. By absorbing rainfall, they ensure a stable water supply and reduce the risks of floods. Many medicinal plants found in forests are the foundation of traditional and modern medicine. They also play a vital role in stabilizing the climate by storing carbon and regulating atmospheric gases. Forests act as a natural home for countless species, many of which are yet to be discovered. They are a key component in sustaining life on Earth and preserving ecological balance.">
+       <div class="icon-container">🌳</div>
+       <h3>1. Ecological Importance 🐾🦋</h3>
+       <p>🌲 Forests are home to over 80% of the terrestrial species of animals, plants, and fungi. 🐒🌸 They play a critical role in maintaining biodiversity, fostering ecological balance, and promoting resilience against climate change. 🌍🦎</p>
+       
+      
+   </div>
+   
+
+<div class="vision-item" id="climate-regulation" 
+     data-image=""C:\Users\tushar\Downloads\Gemini_Generated_Image_vd7hfnvd7hfnvd7h.jpg"" 
+     data-title="Climate Regulation" 
+     data-description="Forests play a crucial role in regulating the Earth's climate. They absorb carbon dioxide, a major greenhouse gas, and store it in biomass, thus mitigating global warming." 
+     data-key-points="Carbon sequestration, Regulates temperature, Influences rainfall patterns"
+     data-additional-info="Forests are vital for climate regulation and play a significant role in mitigating climate change. They store nearly 300 billion tons of carbon in their living parts, including trees, plants, and soil, making them the largest terrestrial carbon sink. Forests absorb carbon dioxide (CO2) from the atmosphere during photosynthesis, reducing the overall concentration of this greenhouse gas, which is responsible for global warming. By removing CO2 from the air, forests help cool the planet, and this carbon is stored in the form of wood, leaves, and soil. 
+     Furthermore, forests protect water resources by stabilizing soil, reducing erosion, and maintaining water quality. By preventing soil erosion, they ensure that essential nutrients stay in the soil and are not washed away, making it easier for plants to grow and ensuring clean water for communities. Forests, therefore, play a dual role in both climate regulation and safeguarding water resources, making them indispensable for a sustainable future.">
+    <div class="icon-container">🌍</div>
+    <h3>2. Climate Regulation 🌡️🌦️</h3>
+    <p>Forests are crucial in regulating the Earth's climate by absorbing carbon dioxide and storing it in biomass, mitigating global warming...</p>
+</div>
+
+   
+   
+   <div class="vision-item" id="water-cycle" 
+   data-image="images/water-cycle-management.j" 
+   data-title="Water Cycle Management" 
+   data-description="Forests play an important role in the water cycle by absorbing rainfall, storing water in their soil, and releasing it back into the atmosphere through transpiration and evaporation." 
+   data-key-points="Water storage, Flood prevention, Groundwater recharge"
+   data-additional-info="Forests are key in maintaining the water cycle. They help regulate water availability throughout the year by ensuring groundwater levels are replenished and preventing flash floods. Trees and plants absorb rainfall, and through their roots, they store it in the soil. The water then enters the atmosphere via transpiration, which helps in regulating the local climate and precipitation patterns. Additionally, forests play a vital role in ensuring clean water supply by filtering and purifying water before it reaches rivers and lakes.">
+   <div class="icon-container">💧</div>
+   <h3>3. Water Cycle Management 🚰</h3>
+   <p>Forests regulate water flow by absorbing rainfall, preventing floods, and ensuring clean water supply...</p>
+</div>
+
+
+<div class="vision-item" id="soil-health" 
+data-image="images/soil-health.jpg" 
+data-title="Soil Health and Erosion Control" 
+data-description="Forests prevent soil erosion, improve soil quality, and support nutrient cycling. Their roots help stabilize the soil, preventing landslides and maintaining fertile land for agriculture." 
+data-key-points="Prevents erosion, Enhances soil fertility, Supports agriculture"
+data-additional-info="The roots of trees and plants form a natural barrier that holds the soil in place, preventing erosion caused by wind and water. This is especially important in hilly and coastal regions where soil erosion can lead to landslides and flooding. In addition to preventing erosion, forests enrich the soil by cycling nutrients. Fallen leaves, branches, and other organic matter break down to create nutrient-rich soil, which supports agriculture and provides habitat for beneficial organisms like earthworms. Healthy forests contribute to maintaining agricultural productivity, ensuring sustainable food sources for communities.">
+<div class="icon-container">🌱</div>
+<h3>4. Soil Health and Erosion Control 🌍</h3>
+<p>Forests help maintain soil fertility and prevent soil erosion, which is vital for sustainable agriculture...</p>
+</div>
+
+
+<div class="vision-item" id="economic-benefits" 
+data-image="images/economic-benefits.jpg" 
+data-title="Economic Benefits" 
+data-description="Forests provide a wide range of economic benefits through sustainable resources such as timber, medicinal plants, and eco-tourism, while also creating jobs and supporting local economies." 
+    data-key-points="Timber production, Eco-tourism, Job creation"
+    data-additional-info="Forests are a vital source of income for many communities through the sustainable harvesting of timber, non-timber products, and eco-tourism activities. Timber is used in construction, paper production, and furniture-making industries, contributing to economic growth. In addition to this, eco-tourism has become a significant industry in forested areas, attracting visitors interested in nature, wildlife, and adventure activities. This generates revenue and creates employment opportunities for local populations. Furthermore, forests support a wide range of industries such as pharmaceuticals, with many medicinal plants being harvested from forests, which helps in the development of drugs and health treatments.">
+    <div class="icon-container">💼</div>
+    <h3>5. Economic Benefits 📈</h3>
+    <p>Forests are not just ecological assets but also major contributors to local and global economies...</p>
+</div>
+
+
+<div class="vision-item" id="cultural-significance" 
+data-image="images/cultural-significance.jpg" 
+data-title="Cultural Significance" 
+data-description="Forests have immense cultural and spiritual importance for many indigenous communities around the world. They provide food, medicine, and materials necessary for traditional lifestyles." 
+data-key-points="Spiritual value, Traditional medicine, Cultural heritage"
+data-additional-info="For many indigenous cultures, forests are sacred spaces that hold deep spiritual significance. They are often seen as a source of life, a place for rituals, and a connection to ancestors. Beyond their spiritual role, forests provide essential resources for indigenous peoples, including food, medicinal plants, and materials for housing, clothing, and tools. Many plants and trees in forests are used in traditional healing practices, with their leaves, roots, and bark serving as remedies for various ailments. Forests also preserve cultural knowledge, as they are intertwined with the stories, traditions, and history of indigenous communities. Their preservation is crucial for maintaining both cultural identity and sustainable ways of life.">
+<div class="icon-container">🛖</div>
+<h3>6. Cultural Significance 🌏</h3>
+<p>For indigenous communities, forests hold great spiritual, cultural, and practical importance...</p>
+</div>
+
+
+<div class="vision-item" id="education-research" 
+data-image="images/education-research.jpg" 
+data-title="Education and Research" 
+data-description="Forests are essential for scientific research and environmental education, offering a living laboratory to study biodiversity, conservation, and sustainable management practices." 
+data-key-points="Biodiversity studies, Conservation research, Environmental education"
+data-additional-info="Forests provide unique opportunities for environmental research, serving as natural laboratories where scientists can study ecosystems, biodiversity, and climate change. They play a crucial role in understanding ecological processes and the effects of human activity on the environment. Researchers use forests to study plant and animal species, their interactions, and the impact of deforestation or reforestation. Forests also offer educational opportunities for students, researchers, and the general public, fostering awareness about the importance of nature conservation. Many universities and research institutions have forested areas dedicated to ecological studies, promoting sustainable forest management and biodiversity conservation. Through such studies, forests contribute valuable knowledge that helps shape environmental policies and conservation strategies globally.">
+<div class="icon-container">📚</div>
+<h3>7. Education and Research 🎓</h3>
+<p>Forests are not only natural wonders but also key to advancing education and research in biodiversity, conservation, and sustainable practices...</p>
+</div>
+
+
+<div class="vision-item" id="community-engagement" 
+data-image="images/community-engagement.jpg" 
+data-title="Community Engagement" 
+data-description="Community involvement in forest conservation helps ensure sustainable management, fosters awareness, and promotes collective action to preserve natural resources." 
+data-key-points="Local participation, Sustainable forestry, Collaboration"
+data-additional-info="Community engagement plays a critical role in the conservation and sustainable management of forests. By involving local communities in forest management practices, we ensure that the people who rely on forests for their livelihoods have a direct stake in their preservation. Local communities can actively contribute to reforestation efforts, help monitor deforestation, and advocate for policies that protect their natural resources. Engaging communities also fosters a sense of responsibility and ownership, which leads to more sustainable practices and better outcomes for both people and the environment. Education and training programs can help empower local people, particularly in rural areas, to understand the importance of sustainable forestry and environmental stewardship. Collaboration between government agencies, non-governmental organizations (NGOs), and local communities ensures a holistic approach to forest conservation that balances ecological, social, and economic needs.">
+<div class="icon-container">🤝</div>
+<h3>8. Community Engagement 🌎</h3>
+<p>Empowering local communities to participate in sustainable forestry practices is key to long-term forest preservation...</p>
+</div>
+
+
+
+
+<div id="vision-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-left">
+            <h3 id="modal-title">Title Here</h3>
+            <p id="modal-description">Description goes here.</p>
+            
+            <h4>Key Points</h4>
+            <ul id="modal-key-points">
+                <!-- Dynamically added points -->
+            </ul>
+            
+            <h4>Additional Information</h4>
+            <p id="modal-additional-info">Additional details will appear here.</p>
+        </div>
+        <div class="modal-right">
+            <img id="modal-image" src="" alt="Related image">
+        </div>
+    </div>
+    <div class="modal-close" onclick="closeModal()">✖</div>
+</div>
+
+
+</section>
+</section>
+<!-- importance sections ends here -->
+<!-- vision improtance making some changes -->

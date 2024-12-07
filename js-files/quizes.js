@@ -38,3 +38,4 @@ function submitQuiz() {
     resultDiv.style.display = "block";
     resultDiv.textContent = `You scored ${score} out of ${totalQuestions}! 🌱 You've planted ${plantsPlanted} virtual plant(s)!`;
 }
+

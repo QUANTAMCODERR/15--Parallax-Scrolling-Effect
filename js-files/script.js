@@ -70,3 +70,32 @@ function toggleContact(id, button) {
         }
     });
 }
+
+
+
+
+
+
+
+
+// Select the Back to Top button
+const backToTopButton = document.getElementById('back-to-top');
+
+// Add a scroll event listener to the window
+window.addEventListener('scroll', () => {
+    // Show the button if the user scrolls down 100px from the top
+    if (window.scrollY > 100) {
+        backToTopButton.style.display = 'block'; // Show the button
+    } else {
+        backToTopButton.style.display = 'none'; // Hide the button
+    }
+});
+
+// Add a click event listener to the button
+backToTopButton.addEventListener('click', () => {
+    // Smoothly scroll to the top of the page
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+});

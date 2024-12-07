@@ -12,9 +12,14 @@
     <link rel="stylesheet" href="css-files/plants_brief.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="css-files/quize.css">
+    <link rel="stylesheet" href="css-files/memories.css">
+
     <link rel="stylesheet" href="hod.css">
     <link rel="stylesheet" href="Answers.css">
+    <link rel="stylesheet" href="journey.css">
     <link rel="stylesheet" href="quizes.css">
+    <link rel="stylesheet" href="css-files/MissionAndVision.css">
+    <link rel="stylesheet" href="css-files/conservationSection.css">
 </head>
 <body>
 
@@ -23,10 +28,10 @@
         <nav>
             <a href="#" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#plants">Plants</a>
-            <a href="#hod">HOD</a>
-            <a href="#memories">Memories</a>
-            <a href="#contact">Contact</a>
+            <a href="#Journey">Journey</a>
+            <a href="#Gallery">Gallery</a>
+            <a href="#Memories">Memories</a>
+            <a href="#Contact">Contact</a>
         </nav>
     </header>
 
@@ -40,184 +45,28 @@
         <img src="assets/bush1.png" class="bush1">
         <img src="assets/leaf2.png" class="leaf2">
         <img src="assets/leaf1.png" class="leaf1">
+
+
+
+
+
+
+
+<!-- Back to Top Button -->
+<button id="back-to-top">⬆️</button>
+
     </section>
 
 
 
 
     <section class="about" id="about">
-        <div class="about-header">
-            <h1 class="fade-in">
-                <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span> 
-                <span>O</span><span>u</span><span>r</span> 
-                <span>D</span><span>e</span><span>n</span><span>s</span><span>e</span> 
-                <span>F</span><span>o</span><span>r</span><span>e</span><span>s</span><span>t</span> 
-                <span>I</span><span>n</span><span>i</span><span>t</span><span>i</span><span>a</span><span>t</span><span>i</span><span>v</span><span>e</span>
-            </h1>
-        </div>
-    
-        <div class="about-content">
-            <div class="about-text quiz-section">
-                <h2>Discover the Secrets of Dense Forests</h2>
-                <p>As you journey through this page, these intriguing questions will lead you to unlock the mysteries of our world’s forests:</p>
-    
-                <div class="quiz-grid">
-                    <div class="quiz-item" data-funfact="Fun Fact: Forests cover about 31% of Earth's total land area!">
-                        🌍 <span>How would our planet look without forests?</span>
-                    </div>
-                    <div class="quiz-item" data-funfact="Fun Fact: Forests absorb around 2.6 billion tons of CO2 each year!">
-                        🌡️ <span>What role do forests play in combating climate change?</span>
-                    </div>
-                    <div class="quiz-item" data-funfact="Fact: The Amazon Rainforest is home to 10% of all known species on Earth.">
-                        🌱 <span>Which endangered species call forests home?</span>
-                    </div>
-                    <div class="quiz-item" data-funfact="Fact: Forests store 75% of the world's freshwater!">
-                        💧 <span>How are forests connected to the water cycle?</span>
-                    </div>
-                    <div class="quiz-item" data-funfact="Fact: Planting a single tree can absorb around 48 pounds of CO2 per year!">
-                        🐾 <span>What steps can individuals take to protect forests?</span>
-                    </div>
-                    <div class="quiz-item" data-funfact="Fact: Deforestation accounts for nearly 10% of global warming emissions.">
-                        📊 <span>What are the most pressing threats to forests today?</span>
-                    </div>
-                    <div class="quiz-item" data-funfact="Fact: Tree roots help bind soil, reducing erosion by up to 90%.">
-                        🌾 <span>How do forests contribute to soil health and prevent erosion?</span>
-                    </div>
-                    <div class="quiz-item" data-funfact="Fact: Over 1.6 billion people rely on forests for their livelihoods.">
-                        🔍 <span>How do forests help local economies thrive?</span>
-                    </div>
-                </div>
-    
-                <p>Follow along, and by the end of this page, you’ll have the answers and a deeper appreciation for these natural wonders!</p>
-            </div>
-    
-            <div class="about-vision mission-vision-section scroll-animate">
-                <div class="vision-container">
-                    <div class="vision-header">
-                        <h2>Our Mission and Vision</h2>
-                        <p>The Dense Forest Initiative is dedicated to the preservation, restoration, and sustainable management of forest ecosystems. Here's why forests matter:</p>
-                    </div>
-    
-                    <div class="vision-content">
-                        <div class="vision-item" id="ecological-importance">
-                            <div class="icon-container">🌳</div>
-                            <h3>1. Ecological Importance</h3>
-                            <p>Forests are home to over 80% of the terrestrial species of animals, plants, and fungi. They play a critical role in maintaining biodiversity, fostering ecological balance, and promoting resilience against climate change.</p>
-                        </div>
-    
-                        <div class="vision-item" id="climate-regulation">
-                            <div class="icon-container">🌍</div>
-                            <h3>2. Climate Regulation</h3>
-                            <p>Forests absorb carbon dioxide, helping mitigate global warming. They act as carbon sinks and influence local weather patterns, making them essential for climate stability.</p>
-                        </div>
-    
-                        <div class="vision-item" id="water-cycle">
-                            <div class="icon-container">💧</div>
-                            <h3>3. Water Cycle Management</h3>
-                            <p>Forests absorb rainfall and release water vapor, maintaining groundwater levels and helping prevent floods, essential for clean water supply.</p>
-                        </div>
-    
-                        <div class="vision-item" id="soil-health">
-                            <div class="icon-container">🌱</div>
-                            <h3>4. Soil Health and Erosion Control</h3>
-                            <p>The roots of trees prevent soil erosion, improve soil health, and support nutrient cycling, which is vital for agriculture.</p>
-                        </div>
-    
-                        <div class="vision-item" id="economic-benefits">
-                            <div class="icon-container">💼</div>
-                            <h3>5. Economic Benefits</h3>
-                            <p>Forests provide resources like timber and eco-tourism opportunities, generating jobs and supporting livelihoods through sustainable practices.</p>
-                        </div>
-    
-                        <div class="vision-item" id="cultural-significance">
-                            <div class="icon-container">🛖</div>
-                            <h3>6. Cultural Significance</h3>
-                            <p>For indigenous communities, forests hold cultural and spiritual value, providing food, medicine, and materials necessary for traditional lifestyles.</p>
-                        </div>
-    
-                        <div class="vision-item" id="education-research">
-                            <div class="icon-container">📚</div>
-                            <h3>7. Education and Research</h3>
-                            <p>Forests serve as living laboratories for studying biodiversity and conservation, informing better management and protection strategies.</p>
-                        </div>
-                        
-                        <div class="vision-item" id="community-engagement">
-                            <div class="icon-container">🤝</div>
-                            <h3>8. Community Engagement</h3>
-                            <p>We believe in empowering local communities to participate in sustainable forestry practices. By fostering collaboration and education, we aim to create a stewardship culture that respects and preserves our natural resources.</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="cta-section">
-                    <p>Join us in our mission to protect and restore our forest ecosystems! Together, we can ensure a sustainable future for our planet!</p>
-                </div>
-    
-                <!-- New section for credits -->
-                <div class="credits-section">
-                    <p>By <strong>SYMCA<2025 BATCH></strong></p>
-                    <p>Thank you for being a part of our mission to make a difference!</p>
-                </div>
-            </div>
-        </div>
-    
-            
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Forest Layers: Each clickable to reveal more information -->
-        <div class="forest-layers">
-            <div class="layer canopy" onmouseover="showCanopyFeature()" onmouseout="hideFeature()">
-                <h3>Canopy Layer</h3>
-                <p>Explore the topmost layer of the forest, home to towering trees and a variety of wildlife.</p>
-            </div>
-            <div class="layer understory" onmouseover="showUnderstoryFeature()" onmouseout="hideFeature()">
-                <h3>Understory Layer</h3>
-                <p>Discover the middle layer of smaller trees and shrubs, filled with life and beauty.</p>
-            </div>
-            <div class="layer forest-floor" onmouseover="showForestFloorFeature()" onmouseout="hideFeature()">
-                <h3>Forest Floor</h3>
-                <p>The forest’s foundation, where organic matter decomposes and nurtures new growth.</p>
-            </div>
-        </div>
-    
-        <!-- Hoverable Feature Section -->
-        <div class="feature-details" id="featureDetails">
-            <h3 id="featureTitle">Forest Layer Details</h3>
-            <p id="featureContent">Hover over a layer to explore more about its unique characteristics!</p>
-        </div>
-    
-        <!-- Profile section using the existing container and aligning with flexbox -->
-        <section class="container">
-            <div class="circle first"></div>
-            <div class="bar"></div>
-            <img alt="profile" height="90" width="90" class="profile" />
-            <div class="text"></div>
-            <div class="details"></div>
-            <div class="circle second" id="scrollToTop"></div> <!-- Added ID here -->
-        </section>
         
-
-
-
         <!-- DENSE FOREST GECA -->
 
         <section class="plants-section">
             <h1>
-                Dense Forest Geca
+                About Dense Forest
                 <div class="trees-svg">
                     <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                         <rect x="45" y="70" width="10" height="20" fill="saddlebrown" />
@@ -269,84 +118,319 @@
 
 
         <!-- DENSE FOREST GECA THE END -->
-
-
-    <!-- unique idea starts here -->
-
-
-
-<section class="unique-about-plants-section">
-    <div class="unique-tree-svg">
-        <img src="assets/rb_110982.png" alt="Trees">
+<!-- Quiz Section -->
+<div class="about-content">
+    <div class="about-text quiz-section">
+        <div class="about-header">
+            <h1 class="fade-in">
+                <span>D</span><span>o</span><span></span>
+                <span>Y</span><span>o</span><span>u</span> 
+                <span>K</span><span>n</span><span>o</span>w<span></span>...<span>?</span> 
+            </h1>
+        </div>
+        <h2>Discover the Secrets of Dense Forests</h2>
+        <div class="quiz-grid">
+            <div class="quiz-item" data-funfact=" Fact: Forests cover about 31% of Earth's total land area!">
+                🌍 <span>How would our planet look without forests?</span>
+            </div>
+            <div class="quiz-item" data-funfact=" Fact: Forests absorb around 2.6 billion tons of CO2 each year!">
+                🌡️ <span>What role do forests play in combating climate change?</span>
+            </div>
+            <div class="quiz-item" data-funfact="Fact: The Amazon Rainforest is home to 10% of all known species on Earth.">
+                🐾 <span>Which endangered species call forests home?</span>
+            </div>
+            <div class="quiz-item" data-funfact="Fact: Forests store 75% of the world's freshwater!">
+                💧 <span>How are forests connected to the water cycle?</span>
+            </div>
+            <div class="quiz-item" data-funfact="Fact: Planting a single tree can absorb around 48 pounds of CO2 per year!">
+                🌳 <span>What steps can individuals take to protect forests?</span>
+            </div>
+            <div class="quiz-item" data-funfact="Fact: Deforestation accounts for nearly 10% of global warming emissions.">
+                🔥 <span>What are the biggest threats to forests today?</span>
+            </div>
+        </div>
     </div>
+</div>
 
-    <div class="unique-plant-fact unique-fact-1">
-        "Plants release oxygen, which is essential for all life on Earth."
+
+<!-- Modal Popup -->
+
+
+    <!-- ends here -->
+
+
+<!-- journey section starts here -->
+ <section class="journey">
+
+     <section class="journey-section" id="Journey">
+         <h1 class="journey-title">The Journey 🌱</h1> <!-- Heading at the top -->
+         <div class="journey-text">
+             <h2>Land Selection 🌍</h2>
+             <p>In <strong>July 2023</strong>, the journey of the <strong>Dense Forest</strong> project began with an essential first step: <strong>finalizing the land</strong>. After careful assessment, a piece of land was selected within the <strong>Government College of Engineering, Chhatrapati Sambhaji Nagar</strong> 🏫. This land was strategically located near the <strong>Gils Hostel</strong> 🏨 and the <strong>college ground</strong> 🏞️, making it an ideal choice for this environmental initiative.</p>
+             <p>The land selection process was led by <strong>Principal Bhalchandra Mam</strong> 👩‍🏫, whose unwavering support and leadership were instrumental in bringing the vision of the project to life. In addition to the Principal's guidance, <strong>Professor Mopari</strong> 👨‍🏫 played a significant role as one of the primary sponsors, and <strong>Mahindra</strong> 🚗 also provided generous sponsorship, ensuring that all necessary resources were available for the project.</p>
+             <p>The MCA <strong>Head of Department (HOD)</strong>, <strong>Praveen Shettiye</strong> 👔, contributed his valuable expertise and was actively involved in the decision-making process, ensuring that the chosen land would support the growth of a dense forest 🌳🌿 and create a positive environmental impact.</p>
+             <p>This initial step set the foundation for the <strong>Dense Forest</strong> project 🌱, marking the beginning of a collaborative effort between the college administration, faculty, and sponsors to transform the campus into a green, sustainable space 🌍💚.</p>
+            </div>
+    <div class="journey-carousel">
+      <div class="carousel-item">
+        <img src="assets/babul.jpg" alt="Journey Image 1" class="carousel-img">
+        <div class="carousel-label">This image shows the land selected for the project, strategically located near Gils Hostel and the college ground.</div>
     </div>
-
-    <div class="unique-plant-fact unique-fact-2">
-        "A single tree can absorb as much as 48 pounds of carbon dioxide per year."
-    </div>
-
-    <div class="unique-plant-fact unique-fact-3">
-        "Some plants, like Aloe Vera, have healing properties for skin burns."
-    </div>
-
-    <div class="unique-plant-fact unique-fact-4">
-        "Spider plants are known for their ability to clean indoor air by absorbing pollutants."
+    <div class="carousel-item">
+        <img src="assets/tulsi.JPG" alt="Journey Image 2" class="carousel-img">
+        <div class="carousel-label">A close-up of the selected land area, showcasing the green surroundings where the forest will grow.</div>
+      </div>
+      <div class="carousel-item">
+          <img src="assets/banyan.jpg" alt="Journey Image 3" class="carousel-img">
+          <div class="carousel-label">A view of the existing flora on the selected land, which will blend with the newly planted dense forest.</div>
+      </div>
     </div>
 </section>
 
+<!-- Digging Section -->
+<section class="journey-section">
+    <div class="journey-text">
+        <h2>Digging and Soil Preparation 🛠️</h2>
+        <p>The next critical step in the <strong>Dense Forest</strong> project was preparing the soil through a meticulous digging and enrichment process. To begin, advanced <strong>bulldozers</strong> 🚜 were used to excavate the land to a depth of <strong>11 feet</strong>. This deep digging ensures that the soil is well-aerated and ready to support the growth of a dense and diverse range of plants.</p>
+        <p>Once the soil was excavated, the team focused on enriching it to ensure optimal conditions for plant growth. The addition of <strong>gandul khat</strong> 🌾, a high-quality <strong>vermicompost</strong> made from earthworm castings, was the next step. This compost is packed with essential nutrients, improving the soil’s fertility and creating a sustainable environment for plant roots to thrive.</p>
+        <p>To further enhance the soil's quality and structure, <strong>coconut shells</strong> 🥥 were mixed into the soil. These shells provide several benefits: they increase the soil's moisture retention, prevent soil compaction, and gradually break down to enrich the soil with organic matter over time.</p>
+        <p>The entire process was carried out with collaboration from the college staff and the enthusiastic participation of many <strong>students</strong> 👩‍🎓👨‍🎓, who helped prepare the land for the upcoming planting phase of the project. Their teamwork and dedication played a key role in the success of this soil preparation phase.</p>
+    </div>
     
-    <!-- ends here -->
-
-    <section class="unique-benefits-trees-section">
-        <div class="unique-tree-svg1">
-            <img src="assets/rb_24697.png" alt="Trees">
+    <div class="journey-carousel">
+        <!-- Media Item 1: Bulldozer Digging -->
+        <div class="carousel-item">
+            <img src="assets/black wate.JPG" alt="Bulldozer digging the soil" class="carousel-img">
+            <div class="carousel-label">Bulldozer digging the soil to 11 feet.</div>
         </div>
-    
-        <div class="unique-benefit-content">
-            <div class="unique-tree-benefit unique-benefit-1">
-                "Trees provide shade, helping to lower temperatures in urban areas."
-            </div>
-            
-            <div class="unique-tree-benefit unique-benefit-2">
-                "They are vital in preventing soil erosion by holding the soil in place."
-            </div>
-            
-            <div class="unique-tree-benefit unique-benefit-3">
-                "Trees contribute to improved air quality by absorbing pollutants."
-            </div>
-            
-            <div class="unique-tree-benefit unique-benefit-4">
-                "Planting trees can increase property values by enhancing aesthetics."
-            </div>
-            
-            <div class="unique-tree-benefit unique-benefit-5">
-                "Trees play a crucial role in the water cycle by helping to regulate water flow."
-            </div>
-            
-            <div class="unique-tree-benefit unique-benefit-6">
-                "Trees provide habitat and food for various wildlife species."
-            </div>
-            
-            <div class="unique-tree-benefit unique-benefit-7">
-                "They help reduce noise pollution by acting as sound barriers."
-            </div>
-            
+        
+        <!-- Media Item 2: Adding Gandul Khat -->
+        <div class="carousel-item">
+            <img src="assets/big-tree-isolated-cartoon.png" alt="Adding gandul khat with a machine" class="carousel-img">
+            <div class="carousel-label">Adding gandul khat (vermicompost) to the soil.</div>
         </div>
-    </section>
+        
+        <!-- Media Item 3: Mixing Soil and Fertilizer -->
+        <div class="carousel-item">
+            <img src="assets/digging3.jpg" alt="Mixing the soil and fertilizer" class="carousel-img">
+            <div class="carousel-label">Mixing soil with vermicompost (gandul khat).</div>
+        </div>
+        
+        <!-- Media Item 4: Adding Coconut Shells -->
+        <div class="carousel-item">
+            <img src="assets/digging4.jpg" alt="Coconut shells being added to the soil" class="carousel-img">
+            <div class="carousel-label">Incorporating coconut shells into the soil.</div>
+        </div>
+        
+        <!-- Media Item 5: Students Participating -->
+        <div class="carousel-item">
+            <img src="assets/digging5.jpg" alt="Students participating in soil preparation" class="carousel-img">
+            <div class="carousel-label">Students assisting with soil preparation.</div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Soil Layering Section -->
+<section class="journey-section">
+    <div class="journey-text">
+        <h2>Soil Layering Process 🌾</h2>
+        <p>The soil preparation process advanced with a carefully planned layering technique, designed to enhance the soil's fertility and structure, providing an ideal environment for plant growth:</p>
+        <ul>
+            <li><strong>Rice Husk</strong>: First, <strong>rice husk</strong> was mixed with the soil to improve its texture and aeration. This essential step ensures that the soil remains well-drained, providing roots with the necessary oxygen for healthy growth. 🌾</li>
+            <li><strong>Gandul Khat</strong>: Next, <strong>gandul khat</strong> (a nutrient-rich vermicompost made from earthworm castings) was added to the soil mixture. Gandul khat is rich in organic matter, providing essential nutrients that enhance soil fertility and support plant health by fostering beneficial microbial activity. 🪱</li>
+            <li><strong>Coconut Shells</strong>: Finally, <strong>coconut shells</strong> were incorporated into the soil. These shells not only help to improve the soil’s moisture retention, which is critical for plant hydration, but also add organic material that contributes to the long-term structure and health of the soil. 🥥</li>
+        </ul>
+        <p>Once all of these layers were added, the soil was thoroughly watered to settle the materials and create a balanced environment conducive to plant growth. This process was carried out meticulously to ensure optimal results. 💧</p>
+    </div>
     
+    <div class="journey-carousel">
+        <div class="carousel-item">
+            <img src="assets/image1.jpg" class="carousel-img" alt="Journey Image 1">
+            <div class="carousel-label">Rice husk being mixed with the soil to improve texture and aeration.</div>
+        </div>
+        <div class="carousel-item">
+            <video class="carousel-video" src="assets/soilmixing1.mp4" autoplay muted></video>
+            <div class="carousel-label">Video showing the process of adding gandul khat to the soil mixture for nutrient enhancement.</div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/image2.jpg" class="carousel-img" alt="Journey Image 2">
+            <div class="carousel-label">Coconut shells being incorporated into the soil to improve its structure and moisture retention.</div>
+        </div>
+        <div class="carousel-item">
+            <video class="carousel-video" src="assets/video2.mp4" autoplay muted></video>
+            <div class="carousel-label">Video showing the final steps of watering the layered soil to settle the materials.</div>
+        </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  
+  <!-- Plant Selection and Ground Marking Section -->
+  <section class="journey-section">
+      <div class="journey-text">
+          <h2>Plant Selection and Ground Marking 🌱📏</h2>
+          <p>The next critical step in the <strong>Dense Forest</strong> project involved the careful selection of plants and marking the ground for their plantation. This detailed process ensured that each plant was positioned optimally, contributing to the overall success of the forest's growth.</p>
+          
+          <h3>Step 1: Selecting the Plants 🌿</h3>
+          <p>A total of <strong>40 plants</strong> were selected for this phase, based on their ability to thrive in the local environment, their ecological benefits, and their contribution to biodiversity 🌍. These plants include a variety of species, each playing a key role in creating a balanced and sustainable ecosystem. 🌳🌱</p>
+          
+          <h3>Step 2: Marking the Ground 📍</h3>
+          <p>After selecting the plants, the team began marking the ground for plantation. A large <strong>rectangular area</strong> was drawn, inside of which smaller rectangles were marked. Each smaller rectangle would contain:</p>
+          <ul>
+              <li><strong>Four plants</strong> along the borders 🌿🌿🌿🌿</li>
+              <li><strong>Three plants</strong> in the center 🌱🌱🌱</li>
+            </ul>
+            <p>This structured approach allowed the plants to be spaced appropriately for optimal growth 🌱.</p>
+            
+            <h3>Step 3: Numbering and Planting the Plants 🌱</h3>
+            <p>The plants were then numbered 🔢 to ensure they were planted in the correct spots. This process was carried out with the help of many enthusiastic <strong>students</strong> 👩‍🎓👨‍🎓, who actively participated in the plantation. They ensured each plant was positioned correctly and that the entire area was carefully filled according to the marked layout. 🌍💚</p>
+        </div>
+        
+        <!-- Planting Process Media Carousel -->
+        <div class="journey-carousel">
+            <!-- Media Item 1: Marking the Ground -->
+            <div class="carousel-item">
+          <img src="assets/marking-ground.jpg" class="carousel-img" alt="Marking the Ground for Plantation">
+          <div class="carousel-label">The large rectangular area drawn on the ground, with smaller rectangles outlining planting zones. 📏✏️</div>
+        </div>
+        
+        <!-- Media Item 2: Numbering the Plants -->
+        <div class="carousel-item">
+            <img src="assets/numbering-plants.jpg" class="carousel-img" alt="Numbering the Plants">
+            <div class="carousel-label">Numbering the plants 🔢 to ensure they are planted in their designated spots.</div>
+        </div>
+        
+        <!-- Media Item 3: Planting Process -->
+        <div class="carousel-item">
+            <video class="carousel-video" src="assets/planting-process.mp4" autoplay muted></video>
+            <div class="carousel-label">Video showing the students actively planting the selected plants in the marked ground 🌱👩‍🎓👨‍🎓.</div>
+        </div>
+        
+        <!-- Media Item 4: Plant Arrangement -->
+        <div class="carousel-item">
+            <img src="assets/plant-arrangement.jpg" class="carousel-img" alt="Plant Arrangement in the Ground">
+            <div class="carousel-label">A view of the marked rectangle with the plants placed as per the layout plan (4 on the border, 3 in the center) 🌿🌱.</div>
+        </div>
+        
+        <!-- Media Item 5: Group of Students Planting -->
+        <div class="carousel-item">
+            <img src="assets/group-planting.jpg" class="carousel-img" alt="Group of Students Planting">
+            <div class="carousel-label">Students working together to plant the selected plants in the marked ground 👩‍🎓👨‍🎓💪🌱.</div>
+        </div>
+    </div>
+</section>
+<!-- Plant Selection and Ground Marking Section Ends Here -->
 
-    <!-- ends here -->
+
+
+<!-- Planting the Plants Section -->
+<section class="journey-section">
+    <div class="journey-text">
+        <h2>Planting the Plants 🌱👩‍🎓👨‍🎓</h2>
+        
+        <!-- Introduction -->
+        <p>The next exciting step in the <strong>Dense Forest</strong> project was planting the selected plants in the marked ground. This crucial task was carried out with the help of students from various <strong>departments</strong> 🎓, who actively participated in ensuring that each plant was carefully planted, transferred, and watered. The process can be broken down into four main stages: transferring the plants, planting them, supporting them with bamboo sticks, and watering them.</p>
+        
+        <!-- Step 1: Transferring the Plants -->
+        <h3>Step 1: Transferring the Plants 🚚</h3>
+        <p>Once the plants were ready, a <strong>queue</strong> was formed to ensure an organized transfer of the plants to their designated spots. Students worked together to carefully transport the plants from the storage area to the planting site 🏞️. This well-coordinated process ensured that no plants were damaged during the transfer, and everything was done efficiently.</p>
+        
+        <!-- Step 2: Planting the Plants -->
+        <h3>Step 2: Planting the Plants 🌿</h3>
+        <p>After the plants arrived at the site, it was time for planting. Students placed the plants into the pre-marked grid, which was organized into small rectangles. Each rectangle was designed to have four plants on its borders and three plants in the center. The students made sure that each plant was securely planted, ensuring that it would have the best start for growth 🌱.</p>
+        
+        <p>To ensure that the young plants remained upright and received the necessary support for growth, <strong>bamboo sticks</strong> 🎋 were placed beside each plant. The bamboo sticks were carefully driven into the soil, and each plant was gently tied to the stick using soft twine. This support kept the plants straight, especially during strong winds, ensuring they had a sturdy foundation as they grew taller and stronger 🌿💪.</p>
+        
+        <!-- Step 4: Watering the Plants -->
+        <h3>Step 3: Watering the Plants 💧</h3>
+        <p>Watering the plants was the final essential step in the planting process. A dedicated group of students took on the responsibility of watering each plant 💦. This helped settle the soil around the roots, ensuring that the plants received the moisture they needed for healthy growth. This step was crucial for helping the plants establish themselves in their new environment 🌳.</p>
+        
+        <p>Through the teamwork of the students, the plantation process was completed successfully, laying the foundation for the growth of the Dense Forest 🌍💚.</p>
+    </div>
+    
+    <!-- Planting Process Media Carousel -->
+    <div class="journey-carousel">
+        <!-- Media Item 1: Transferring the Plants -->
+        <div class="carousel-item">
+            <img src="assets/transferring-plants.jpg" class="carousel-img" alt="Transferring the Plants">
+            <div class="carousel-label">Students transferring the plants to their designated planting spots 🚚🌱.</div>
+        </div>
+        
+        <!-- Media Item 2: Students Planting the Plants -->
+        <div class="carousel-item">
+            <img src="assets/planting-plants.jpg" class="carousel-img" alt="Planting the Plants">
+            <div class="carousel-label">Students planting the selected plants in the marked ground 🌿🌱.</div>
+        </div>
+        
+        <!-- Media Item 3: Students Supporting with Bamboo Sticks -->
+        <div class="carousel-item">
+          <img src="assets/supporting-plants.jpg" class="carousel-img" alt="Supporting the Plants with Bamboo Sticks">
+          <div class="carousel-label">Students supporting the plants with bamboo sticks to ensure they grow upright 🎋🌱.</div>
+        </div>
+        
+        <!-- Media Item 4: Watering the Plants -->
+        <div class="carousel-item">
+            <img src="assets/watering-plants.jpg" class="carousel-img" alt="Watering the Plants">
+            <div class="carousel-label">Students watering the plants to help them settle into their new home 💧🌱.</div>
+        </div>
+        
+        <!-- Media Item 5: Students Working Together -->
+        <div class="carousel-item">
+            <img src="assets/group-planting2.jpg" class="carousel-img" alt="Students Planting Together">
+            <div class="carousel-label">A group of students planting together, ensuring that each plant is carefully placed 🌱👩‍🎓👨‍🎓.</div>
+        </div>
+        
+        <!-- Media Item 6: Watering Process -->
+        <div class="carousel-item">
+            <video class="carousel-video" src="assets/watering-video.mp4" autoplay muted></video>
+            <div class="carousel-label">Video showing students watering the newly planted trees to help them thrive 💧🌳.</div>
+        </div>
+    </div>
+</section>
+<!-- Planting the Plants Section Ends Here -->
+
+
+<!-- Final Watering Section -->
+<section class="journey-section">
+    <div class="journey-text">
+        <h2>Watering and Maintenance 💧</h2>
+        <p>The final and crucial stage of the <strong>Dense Forest</strong> project focused on ensuring the plants received proper care and nourishment:</p>
+        <ul>
+            <li><strong>Initial Watering</strong>: At the beginning, water was supplied using a normal pipe sourced from the <strong>girls' hostel</strong> 🏢. This ensured that the young plants received adequate hydration in their initial days of growth. 💦</li>
+            <li><strong>Advanced Irrigation</strong>: As the plants grew, <strong>water tanks</strong> 🚛 were brought in to efficiently irrigate the entire plantation area. This method made it easier to provide consistent watering to all the plants. 🌱</li>
+            <li><strong>Ground Maintenance</strong>: Over time, the ground around the plants became rough. The debris was removed, and the soil near the plants was loosened with careful digging to allow water to seep through effectively and nourish the roots. 🔄</li>
+        </ul>
+        <p>This meticulous process of watering and maintaining the plants was carried out with dedication by the <strong>MCA students</strong> 👩‍🎓👨‍🎓 under the expert guidance of <strong>HOD Praveen Shetiye</strong> 👔.</p>
+    </div>
+    
+    <div class="journey-carousel">
+        <div class="carousel-item">
+            <img src="assets/watering_pipe.jpg" class="carousel-img" alt="Watering the plants with a pipe">
+            <div class="carousel-label">Initial watering using a normal pipe from the girls' hostel.</div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/watering_tank.jpg" class="carousel-img" alt="Watering plants with a water tank">
+            <div class="carousel-label">Watering the plants using a water tank as they grew larger.</div>
+        </div>
+        <div class="carousel-item">
+            <video class="carousel-video" src="assets/maintenance.mp4" autoplay muted></video>
+            <div class="carousel-label">Students removing debris and loosening the soil near the plants for better hydration.</div>
+        </div>
+    </div>
+</section>  
+</section>
+<!-- journey section ends here -->
 
 
 
 
+<!-- plants section starts here  -->
 
-
-<!-- photos  -->
-<section class="plants" id="plants">
+<section class="plants" id="Gallery">
     <h1 class="section-title"> <div class="trees-svg">
         <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
             <rect x="45" y="70" width="10" height="20" fill="saddlebrown" />
@@ -364,364 +448,175 @@
     </div></h1>
     
     <div class="plants-container">
-       <!-- Plant Card 1 -->
-<div class="plant-card">
-    <div class="plant-image">
-        <img src="assets/NeemTree.JPG" alt="Neem Plant">
-    </div>
-    <div class="plant-info">
-        <h2>🌿 Plant Name: Neem</h2>
-        <h3>📚 Scientific Name: Azadirachta indica</h3>
-        <p class="short-description">
-            🌍 Neem is a fast-growing, evergreen tree native to the Indian subcontinent.
-        </p>
-        <button class="view-more">🔍 View More</button>
-    </div>
-</div>
 
-
-<!-- Plant Card 2 -->
-<div class="plant-card">
-    <div class="plant-image">
-        <img src="assets/tulsi.JPG" alt="Tulsi Plant">
-    </div>
-    <div class="plant-info">
-        <h2>🌿 Plant Name: Tulsi</h2>
-        <h3>📚 Scientific Name: Ocimum tenuiflorum</h3>
-        <p class="short-description">
-            🌍 Tulsi, also known as Holy Basil, is a revered plant in India for its medicinal and spiritual properties.
-        </p>
-        <button class="view-more">🔍 View More</button>
-    </div>
-</div>
-
-
-
-<!-- Plant Card 3 -->
-<div class="plant-card">
-    <div class="plant-image">
-        <img src="assets/sagvan.JPG" alt="Teak Plant">
-    </div>
-    <div class="plant-info">
-        <h2>🌳 Plant Name: Teak</h2>
-        <h3>📚 Scientific Name: Tectona grandis</h3>
-        <p class="short-description">
-            🌍 Teak is a tropical hardwood tree known for its durable and water-resistant wood.
-        </p>
-        <button class="view-more">🔍 View More</button>
-    </div>
-</div>
-
-<!-- Plant Card 4 -->
-<div class="plant-card">
-    <div class="plant-image">
-        <img src="assets/poison sumac.JPG" alt="Bhoma Plant">
-    </div>
-    <div class="plant-info">
-        <h2>🌿 Plant Name: Bhoma</h2>
-        <h3>📚 Scientific Name: Glochidion ellipticum</h3>
-        <p class="short-description">
-            🌍 Bhoma is a tropical plant known for its use in traditional medicine and ecological importance in forest ecosystems.
-        </p>
-        <button class="view-more">🔍 View More</button>
-    </div>
-</div>
-
-
-
-<!-- Plant Card 5 -->
-<div class="plant-card">
-    <div class="plant-image">
-        <img src="assets/banyan.jpg" alt="Banyan Plant">
-    </div>
-    <div class="plant-info">
-        <h2>🌳 Plant Name: Banyan</h2>
-        <h3>📚 Scientific Name: Ficus benghalensis</h3>
-        <p class="short-description">
-            🌍 The Banyan tree is a large, iconic tree native to the Indian subcontinent, known for its extensive root system and cultural significance.
-        </p>
-        <button class="view-more">🔍 View More</button>
-    </div>
-</div>
-
-
-
-<!-- Plant Card 6 -->
-<div class="plant-card">
-    <div class="plant-image">
-        <img src="assets/jackfruit.JPG" alt="Jackfruit Plant">
-    </div>
-    <div class="plant-info">
-        <h2>🌳 Plant Name: Jackfruit</h2>
-        <h3>📚 Scientific Name: Artocarpus heterophyllus</h3>
-        <p class="short-description">
-            🌍 Jackfruit is a large, tropical tree species known for producing the largest fruit of all trees, native to South and Southeast Asia.
-        </p>
-        <button class="view-more">🔍 View More</button>
-    </div>
-</div>
-
-
-<!-- Plant Card 7 -->
-<div class="plant-card">
-    <div class="plant-image">
-        <img src="assets/peepal tree.JPG" alt="Peepal Tree">
-    </div>
-    <div class="plant-info">
-        <h2>🌳 Plant Name: PeepalTree</h2>
-        <h3>📚 Scientific Name: Ficus religiosa</h3>
-        <p class="short-description">
-            🌍 The Peepal tree is a large, long-living tree revered in many cultures, especially in the Indian subcontinent, for its religious and medicinal significance.
-        </p>
-        <button class="view-more">🔍 View More</button>
-    </div>
-</div>
-
-<!-- Plant Card 8 -->
-<div class="plant-card">
-    <div class="plant-image">
-        <img src="assets/Pomegranet.JPG" alt="Pomegranate Plant">
-    </div>
-    <div class="plant-info">
-        <h2>🍎 Plant Name: Pomegranate</h2>
-        <h3>📚 Scientific Name: Punica granatum</h3>
-        <p class="short-description">
-            🌍 The Pomegranate tree is a fruit-bearing shrub or small tree native to the region extending from Iran to northern India.
-        </p>
-        <button class="view-more">🔍 View More</button>
-    </div>
-</div>
-
-
-
-<!-- Plant Card 9 -->
-<div class="plant-card">
-    <div class="plant-image">
-        <img src="assets/champak.JPG" alt="Champak Plant">
-    </div>
-    <div class="plant-info">
-        <h2>🌼 Plant Name: Champak</h2>
-        <h3>📚 Scientific Name: Plumeria alba</h3>
-        <p class="short-description">
-            🌍 The Champak tree is admired for its fragrant white flowers, commonly used in religious and cultural ceremonies in various regions.
-        </p>
-        <button class="view-more">🔍 View More</button>
-    </div>
-</div>
-
-<!-- Plant Card 10 -->
-<div class="plant-card">
-    <div class="plant-image">
-        <img src="assets/panama rubber.JPG" alt="Panama Rubber Tree">
-    </div>
-    <div class="plant-info">
-        <h2>🌳 Plant Name: PanamaRubberTree</h2>
-        <h3>📚 Scientific Name: Castilla elastica</h3>
-        <p class="short-description">
-            🌍 The Panama Rubber Tree is known for its latex-producing properties and is native to Central and South America.
-        </p>
-        <button class="view-more">🔍 View More</button>
-    </div>
-</div>
-
-
-<!-- Plant Card 11 -->
-<div class="plant-card">
-    <div class="plant-image">
-        <img src="assets/burflower.JPG" alt="Burflower (Kadam) Plant">
-    </div>
-    <div class="plant-info">
-        <h2>🌸 Plant Name: Burflower</h2>
-        <h3>📚 Scientific Name: Neolamarckia cadamba</h3>
-        <p class="short-description">
-            🌍 The Burflower tree is known for its fragrant flowers and is commonly found in tropical regions, especially in India.
-        </p>
-        <button class="view-more">🔍 View More</button>
-    </div>
-</div>
-
-<!-- Plant Card 12 -->
-<div class="plant-card">
-    <div class="plant-image">
-        <img src="assets/sona.jpg" alt="Bauhinia forficata Plant">
-    </div>
-    <div class="plant-info">
-        <h2>🌿 Plant Name: BauhiniaForficata</h2>
-        <h3>📚 Scientific Name: Bauhinia forficata</h3>
-        <p class="short-description">
-            🌍 Bauhinia forficata, also known as the Brazilian Orchid Tree, is renowned for its medicinal properties and beautiful, orchid-like flowers.
-        </p>
-        <button class="view-more">🔍 View More</button>
-    </div>
-</div>
-
-<!-- Plant Card 13 -->
-<div class="plant-card">
-    <div class="plant-image">
-        <img src="assets/fanas.jpg" alt="Mangifera caesia Plant">
-    </div>
-    <div class="plant-info">
-        <h2>🥭 Plant Name: MangiferaCaesia</h2>
-        <h3>📚 Scientific Name: Mangifera caesia</h3>
-        <p class="short-description">
-            🌍 Mangifera caesia, also known as White Mango or Binjai, is a tropical fruit tree prized for its sweet, fragrant fruit.
-        </p>
-        <button class="view-more">🔍 View More</button>
-    </div>
-</div>
-
-<!-- Plant Card 14 -->
-<div class="plant-card">
-    <div class="plant-image">
-        <img src="assets/godnimbu.jpg" alt="Curry Tree Plant">
-    </div>
-    <div class="plant-info">
-        <h2>🌿 Plant Name: CurryTree</h2>
-        <h3>📚 Scientific Name: Murraya koenigii</h3>
-        <p class="short-description">
-            🌍 The Curry Tree is famous for its aromatic leaves, used extensively in South Asian cuisine for their distinctive flavor.
-        </p>
-        <button class="view-more">🔍 View More</button>
-    </div>
-</div>
-
-<!-- Plant Card 15 -->
-<div class="plant-card">
-    <div class="plant-image">
-        <img src="assets/mango.jpg" alt="Mango Plant">
-    </div>
-    <div class="plant-info">
-        <h2>🥭 Plant Name: Mango</h2>
-        <h3>📚 Scientific Name: Mangifera indica</h3>
-        <p class="short-description">
-            🌍 The Mango tree is a tropical fruit tree known for its sweet, juicy fruit and its cultural significance in many regions of the world.
-        </p>
-        <button class="view-more">🔍 View More</button>
-    </div>
-</div>
-<!-- Plant Card 16 -->
-<div class="plant-card">
-    <div class="plant-image">
-        <img src="assets/babul.jpg" alt="Albizia chinensis Plant">
-    </div>
-    <div class="plant-info">
-        <h2>🌳 Plant Name: AlbiziaChinensis</h2>
-        <h3>📚 Scientific Name: Albizia chinensis</h3>
-        <p class="short-description">
-            🌍 Albizia chinensis, also known as the Chinese Albizia, is a fast-growing tree found in tropical and subtropical regions, valued for its shade and timber.
-        </p>
-        <button class="view-more">🔍 View More</button>
-    </div>
-</div>
-
-
-        
-
-    </div>
-
-    <div class="modal" id="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Additional Information</h2>
-            <div id="additional-info"></div>
+<!-- Modal Structure -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+            <div class="modal-left">
+                <div id="additional-info"></div>
+            </div>
+            <div class="modal-right">
+                <img id="plant-image" src="assets/babul.jpg" alt="Plant Image" />
+            </div>
         </div>
     </div>
+</div>
+
+<!-- Plant Cards with View More Button -->
+<div class="plant-card" data-plant="Neem">
+    <img src="assets/NeemTree.jpg" alt="Neem" class="plant-image" data-images="assets/NeemTree.jpg,assets/sagvan.JPG,assets/jackfruit.JPG">
+    <h3>Neem</h3>
+    <button class="view-more" data-plant="Neem">View More</button>
+</div>
+
+<div class="plant-card" data-plant="Tulsi">
+    <img src="assets/tulsi.JPG" alt="Tulsi" class="plant-image" data-images="assets/tulsi.JPG,assets/sagvan.JPG,assets/jackfruit.JPG">
+    <h3>Tulsi</h3>
+    <button class="view-more" data-plant="Tulsi">View More</button>
+</div>
+
+<div class="plant-card" data-plant="Teak">
+    <img src="assets/Teak.jpg" alt="Teak" class="plant-image" data-images="assets/Teak.jpg,assets/sagvan.JPG,assets/jackfruit.JPG">
+    <h3>Teak</h3>
+    <button class="view-more" data-plant="Teak">View More</button>
+</div>
+
+<div class="plant-card" data-plant="Bhoma">
+    <img src="assets/Bhoma.jpg" alt="Bhoma" class="plant-image" data-images="assets/Bhoma.jpg,assets/sagvan.JPG,assets/jackfruit.JPG">
+    <h3>Bhoma</h3>
+    <button class="view-more" data-plant="Bhoma">View More</button>
+</div>
+
+<div class="plant-card" data-plant="Banyan">
+    <img src="assets/Banyan.jpg" alt="Banyan" class="plant-image" data-images="assets/Banyan.jpg,assets/sagvan.JPG,assets/jackfruit.JPG">
+    <h3>Banyan</h3>
+    <button class="view-more" data-plant="Banyan">View More</button>
+</div>
+
+<div class="plant-card" data-plant="Jackfruit">
+    <img src="assets/Jackfruit.jpg" alt="Jackfruit" class="plant-image" data-images="assets/Jackfruit.jpg,assets/sagvan.JPG,assets/jackfruit.JPG">
+    <h3>Jackfruit</h3>
+    <button class="view-more" data-plant="Jackfruit">View More</button>
+</div>
+
+<div class="plant-card" data-plant="PeepalTree">
+    <img src="assets/Peepal.jpg" alt="Peepal Tree" class="plant-image" data-images="assets/Peepal.jpg,assets/sagvan.JPG,assets/jackfruit.JPG">
+    <h3>Peepal Tree</h3>
+    <button class="view-more" data-plant="PeepalTree">View More</button>
+</div>
+
+<div class="plant-card" data-plant="Pomegranate">
+    <img src="assets/Pomegranate.jpg" alt="Pomegranate" class="plant-image" data-images="assets/Pomegranate.jpg,assets/sagvan.JPG,assets/jackfruit.JPG">
+    <h3>Pomegranate</h3>
+    <button class="view-more" data-plant="Pomegranate">View More</button>
+</div>
+
+<div class="plant-card" data-plant="Champak">
+    <img src="assets/Champak.jpg" alt="Champak" class="plant-image" data-images="assets/Champak.jpg,assets/sagvan.JPG,assets/jackfruit.JPG">
+    <h3>Champak</h3>
+    <button class="view-more" data-plant="Champak">View More</button>
+</div>
+
+<div class="plant-card" data-plant="Panama Rubber Tree">
+    <img src="assets/PanamaRubber.jpg" alt="Panama Rubber Tree" class="plant-image" data-images="assets/PanamaRubber.jpg,assets/sagvan.JPG,assets/jackfruit.JPG">
+    <h3>Panama Rubber Tree</h3>
+    <button class="view-more" data-plant="Panama">View More</button>
+</div>
+
+<div class="plant-card" data-plant="Burflower">
+    <img src="assets/Burflower.jpg" alt="Burflower" class="plant-image" data-images="assets/Burflower.jpg,assets/sagvan.JPG,assets/jackfruit.JPG">
+    <h3>Burflower (Kadam)</h3>
+    <button class="view-more" data-plant="Burflower">View More</button>
+</div>
+
+<div class="plant-card" data-plant="Bauhinia Forficata">
+    <img src="assets/Bauhinia.jpg" alt="Bauhinia Forficata" class="plant-image" data-images="assets/Bauhinia.jpg,assets/sagvan.JPG,assets/jackfruit.JPG">
+    <h3>Bauhinia Forficata</h3>
+    <button class="view-more" data-plant="BauhiniaForficata">View More</button>
+</div>
+
+<div class="plant-card" data-plant="Mangifera Caesia">
+    <img src="assets/MangiferaCaesia.jpg" alt="Mangifera Caesia" class="plant-image" data-images="assets/MangiferaCaesia.jpg,assets/sagvan.JPG,assets/jackfruit.JPG">
+    <h3>Mangifera Caesia</h3>
+    <button class="view-more" data-plant="MangiferaCaesia">View More</button>
+</div>
+
+<div class="plant-card" data-plant="Curry Tree">
+    <img src="assets/CurryTree.jpg" alt="Curry Tree" class="plant-image" data-images="assets/CurryTree.jpg,assets/sagvan.JPG,assets/jackfruit.JPG">
+    <h3>Curry Tree</h3>
+    <button class="view-more" data-plant="CurryTree">View More</button>
+</div>
+
+<div class="plant-card" data-plant="Mango">
+    <img src="assets/Mango.jpg" alt="Mango" class="plant-image" data-images="assets/Mango.jpg,assets/sagvan.JPG,assets/jackfruit.JPG">
+    <h3>Mango</h3>
+    <button class="view-more" data-plant="Mango">View More</button>
+</div>
+
+<div class="plant-card" data-plant="Albizia Chinensis">
+    <img src="assets/Albizia.jpg" alt="Albizia Chinensis" class="plant-image" data-images="assets/Albizia.jpg,assets/sagvan.JPG,assets/jackfruit.JPG">
+    <h3>Albizia Chinensis</h3>
+    <button class="view-more" data-plant="AlbiziaChinensis">View More</button>
+</div>
+</div>
 </section>
-
-
-
-
-
-
-
-
-
      <!-- Plants Section ends here... -->
 
 
 
-     
-
-
-
-
-
-
-
-
-
 
         
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- HOD Section -->
-<section class="hod" id="hod" style="text-align: center; padding: 20px;">
-    <h1>Head of Department (HOD) 🌳</h1>
+<!-- Project Contributors Section -->
+<!-- Project Contributors Section -->
+<section class="contributors">
+    <h1>Contributors to the Dense Forest Project 🌳</h1>
     
-    <!-- Photo of the HOD -->
-    <img src="assets/hod.jpg" alt="Mr. Praveen Shetiye" style="width: 200px; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);">
+    <p class="intro">
+        The Dense Forest project at GECA is a collaborative initiative reflecting the vision and efforts of <strong>Dr. Bhalchandra Mam</strong> (Principal), supported by <strong>Professor Mopari</strong>, <strong>Mr. Pawar</strong>, and <strong>HOD Praveen Shetiye</strong>. This initiative has been generously sponsored by <strong>Mahindra</strong>.
+    </p>
+    
+    <h2>Key Contributions 🌟</h2>
+    <ul>
+        <li><strong>Dr. Bhalchandra Mam:</strong> Provided visionary leadership and guidance for the project.</li>
+        <li><strong>Professor Mopari:</strong> Supported the operational and academic aspects.</li>
+        <li><strong>Mr. Pawar:</strong> Played a pivotal role in planning and execution.</li>
+        <li><strong>Mr. Praveen Shetiye:</strong> Encouraged student participation and hands-on learning.</li>
+        <li><strong>Mahindra:</strong> Sponsored the project, providing crucial resources.</li>
+    </ul>
 
-    <h2>Meet Mr. Praveen Shetiye 👨‍🏫</h2>
-    <p style="font-size: 18px; line-height: 1.5;">
-        Mr. Praveen Shetiye, our esteemed Head of the MCA Department, is not just an educator; he is a <strong>passionate advocate for the environment 🌿</strong>. His commitment to fostering a deep connection between students and nature sets a remarkable tone for our academic journey.
+    <h2>Student Participation 👩‍🎓👨‍🎓</h2>
+    <p>
+        Students played a vital role in every stage of the Dense Forest project. From planting saplings to maintaining the forest, their contributions were crucial in ensuring the project's success. This hands-on involvement fostered a deeper connection with nature and a sense of responsibility.
     </p>
 
-    <h2 style="color: #21f621;">Vision for the Dense Forest 🌲</h2>
-    <p style="font-size: 18px; line-height: 1.5;">
-        Under Mr. Shettiye's visionary leadership, the initiative to create a <strong>dense forest</strong> within the GECA campus has flourished. This forest serves as a <strong>green sanctuary 🌼</strong> and a living laboratory, illustrating the critical role of dense forests in our ecosystem. He emphasizes that such environments are vital for:
-        <ul style="list-style-type: disc; padding-left: 40px;">
-            <li>Biodiversity 🦋</li>
-            <li>Climate regulation 🌡️</li>
-            <li>Educational resources 📚</li>
-        </ul>
-    </p>
+    <h2>Impact Points 🌟</h2>
+    <ul class="impact-points">
+        <li>Improved biodiversity within the campus environment.</li>
+        <li>Enhanced soil fertility using eco-friendly practices.</li>
+        <li>Created a sustainable model for future green projects.</li>
+        <li>Provided hands-on learning opportunities for students.</li>
+    </ul>
 
-    <h2 style="color: #21f621;">Personal Connection to Nature 🌻</h2>
-    <p style="font-size: 18px; line-height: 1.5;">
-        Mr. Shettiye's affection for plants and nature is palpable. He regularly visits the dense forest, immersing himself in its tranquility. His love for flora inspires students to appreciate the intricacies of the natural world. He is often seen nurturing saplings and sharing knowledge about different plant species 🌱.
+    <h2>Temperature Changes in Chhatrapati Sambhaji Nagar 🌡️</h2>
+    <p>
+        Efforts like the Dense Forest project help mitigate the effects of land-use changes on climate variability. If you'd like to explore more about the impact of such changes on local temperatures, click the button below to read a detailed research paper.
     </p>
-
-    <h2 style="color: #21f621;">Engaging Students with Nature 🌿</h2>
-    <p style="font-size: 18px; line-height: 1.5;">
-        One of the hallmarks of Mr. Shettiye's approach is his commitment to involving students in hands-on activities within the forest. These initiatives range from:
-        <ul style="list-style-type: disc; padding-left: 40px;">
-            <li>Planting trees 🌳</li>
-            <li>Maintaining the forest's health 🌳💪</li>
-        </ul>
-        By engaging in these activities, students gain firsthand experience of the importance of environmental stewardship and develop a sense of responsibility towards nature.
-    </p>
-
-    <h2 style="color: #21f621;">A Philosophy of Process 📈</h2>
-    <p style="font-size: 18px; line-height: 1.5;">
-        With his favorite phrase, <strong>“It's just a process; you have to follow the process,”</strong> Mr. Shettiye teaches students the value of patience and diligence. He believes that progress, whether in ecological initiatives or personal growth, is achieved through:
-        <ul style="list-style-type: disc; padding-left: 40px;">
-            <li>Consistent effort 💪</li>
-            <li>Respect for natural cycles 🌍</li>
-        </ul>
-    </p>
-
-    <h2 style="color: #21f621;">Conclusion 📝</h2>
-    <p style="font-size: 18px; line-height: 1.5;">
-        Mr. Praveen Shetiye is more than just the Head of the MCA Department; he is a <strong>mentor and a guide</strong>, fostering a culture of <strong>environmental consciousness 🌏</strong> among students. His efforts to create and maintain the dense forest reflect his commitment to education, sustainability, and the nurturing of future leaders who will champion the cause of nature.
-    </p>
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="https://www.researchgate.net/publication/357648796_Assessing_the_Influence_of_Land_UseLand_Cover_Alteration_on_Climate_Variability_An_Analysis_in_the_Aurangabad_District_of_Maharashtra_State_India" 
+           target="_blank" 
+           class="btn-research">
+           📄 Read Research Paper
+        </a>
+    </div>
 </section>
 
 
 
 
-<!-- HOD section ends here -->
 
 
 
@@ -729,113 +624,231 @@
 
 
 
-    <!-- Memories Section -->
-    <section class="memories" id="memories">
-        <h1>Memories</h1>
-        <p>Share your memories here.</p>
-    </section>
+<!-- importance section -->
+ <section class="vision-header">            <div class="visionn-header">
+    <h2>Importance Of Forest 🌍🌲</h2></div>
+    <section class="vision-content">
+        
+        
+        <div class="vision-item" id="ecological-importance" 
+        data-image="assets/babul.jpg" 
+        data-title="Ecological Importance" 
+        data-description="Forests are essential to our planet's ecological health. They support biodiversity, regulate the water cycle, and act as carbon sinks, mitigating climate change."
+        data-key-points="Supports 80% of terrestrial species, Provides habitats, Maintains biodiversity"
+        data-additional-info="Forests also prevent soil erosion and act as natural water filters. By absorbing rainfall, they ensure a stable water supply and reduce the risks of floods. Many medicinal plants found in forests are the foundation of traditional and modern medicine. They also play a vital role in stabilizing the climate by storing carbon and regulating atmospheric gases. Forests act as a natural home for countless species, many of which are yet to be discovered. They are a key component in sustaining life on Earth and preserving ecological balance.">
+       <div class="icon-container">🌳</div>
+       <h3>1. Ecological Importance 🐾🦋</h3>
+       <p>🌲 Forests are home to over 80% of the terrestrial species of animals, plants, and fungi. 🐒🌸 They play a critical role in maintaining biodiversity, fostering ecological balance, and promoting resilience against climate change. 🌍🦎</p>
+       
+      
+   </div>
+   
 
+<div class="vision-item" id="climate-regulation" 
+     data-image="images/climate-regulation.jpg" 
+     data-title="Climate Regulation" 
+     data-description="Forests play a crucial role in regulating the Earth's climate. They absorb carbon dioxide, a major greenhouse gas, and store it in biomass, thus mitigating global warming." 
+     data-key-points="Carbon sequestration, Regulates temperature, Influences rainfall patterns"
+     data-additional-info="Forests are vital for climate regulation and play a significant role in mitigating climate change. They store nearly 300 billion tons of carbon in their living parts, including trees, plants, and soil, making them the largest terrestrial carbon sink. Forests absorb carbon dioxide (CO2) from the atmosphere during photosynthesis, reducing the overall concentration of this greenhouse gas, which is responsible for global warming. By removing CO2 from the air, forests help cool the planet, and this carbon is stored in the form of wood, leaves, and soil. 
+     Furthermore, forests protect water resources by stabilizing soil, reducing erosion, and maintaining water quality. By preventing soil erosion, they ensure that essential nutrients stay in the soil and are not washed away, making it easier for plants to grow and ensuring clean water for communities. Forests, therefore, play a dual role in both climate regulation and safeguarding water resources, making them indispensable for a sustainable future.">
+    <div class="icon-container">🌍</div>
+    <h3>2. Climate Regulation 🌡️🌦️</h3>
+    <p>Forests are crucial in regulating the Earth's climate by absorbing carbon dioxide and storing it in biomass, mitigating global warming...</p>
+</div>
 
-<!-- Contact Section -->
-<!-- Contact Section -->
-<section class="contact" id="contact">
-    <h1>Contact Information 🌿</h1>
-
-    <!-- HOD Information -->
-    <div class="contact-hod">
-        <h2>Mr. Praveen Shetiye - Head of Department (HOD) 🌳</h2>
-        <p><strong>Email:</strong> pravinshettiye@geca.edu 📧</p>
-        <p><strong>Phone:</strong> +91-1234567890 📞</p>
-        <p>Mr. Praveen Shetiye is the initiator of the dense forest project at GECA and an ardent nature lover. He continually works with students to nurture the forest and instills in them the importance of conservation.</p>
-        <blockquote>“It's just a process; you have to follow the process.”</blockquote>
-        <blockquote>“Nature always wears the colors of the spirit.” – Ralph Waldo Emerson</blockquote>
-    </div>
-
-    <!-- Plant Contractors Information -->
-    <div class="contact-contractors">
-        <h2>Plant Contractors 🌱</h2>
-        <ul>
-            <li><strong>Contractor 1:</strong> Green Earth Landscaping 🌎</li>
-            <p><strong>Email:</strong> contact@greenearth.com 📧</p>
-            <p><strong>Phone:</strong> +91-9876543210 📞</p>
-
-            <li><strong>Contractor 2:</strong> Nature's Care Nurseries 🌼</li>
-            <p><strong>Email:</strong> info@naturescare.com 📧</p>
-            <p><strong>Phone:</strong> +91-8765432109 📞</p>
-        </ul>
-    </div>
-
-    <!-- Type of Plants Information -->
-    <div class="contact-plants">
-        <h2>Types of Plants in the Dense Forest 🌳🌿</h2>
-        <ul>
-            <li><strong>Bamboo:</strong> Known for its rapid growth and sustainability benefits.</li>
-            <li><strong>Neem Tree:</strong> An essential tree for medicinal purposes and air purification.</li>
-            <li><strong>Teak:</strong> Valuable hardwood tree used in furniture and construction.</li>
-            <li><strong>Fruit-bearing Trees:</strong> Mango, Guava, and Papaya trees promote biodiversity and provide food for wildlife.</li>
-            <li><strong>Flowering Plants:</strong> Hibiscus, Jasmine, and Marigold brighten the forest with their colors and fragrances.</li>
-        </ul>
-        <blockquote>“The creation of a thousand forests is in one acorn.” – Ralph Waldo Emerson</blockquote>
-    </div>
-
-    <!-- Get in Touch -->
-    <div class="get-in-touch">
-        <h2>Get in Touch 📞✉️</h2>
-        <p>For more details on how to contribute to the dense forest project, volunteer with our department, or learn more about sustainability efforts, feel free to contact us:</p>
-        <p><strong>Email:</strong> hod-contact@geca.edu 📧</p>
-        <p><strong>Phone:</strong> +91-1122334455 📞</p>
-    </div>
-</section>
-
-
-
-<!-- Contact sections ends here -->
-
-<!-- Answers section here   -->
-<div class="answers-section">
-    <h2>Let's See the Answers to the Questions Asked Earlier!</h2>
-    <p class="intro-text">As we delve into the fascinating world of forests, here are the answers to the intriguing questions you encountered at the beginning of this journey:</p>
-    
-    <div class="answer-item">
-        <h3>1. How would our planet look without forests? 🌍</h3>
-        <p>Without forests, our planet would undergo drastic changes. We would see increased desertification, reduced biodiversity, and a decline in air quality. The absence of trees would lead to higher carbon dioxide levels, intensifying climate change. Weather patterns would become more extreme, and many species reliant on forest habitats would face extinction. Ultimately, our planet would be less resilient, more barren, and less capable of supporting life as we know it.</p>
-    </div>
-    <div class="answer-item">
-        <h3>2. What role do forests play in combating climate change? 🌡️</h3>
-        <p>Forests are vital in combating climate change by acting as carbon sinks. They absorb approximately 2.6 billion tons of CO2 annually, helping to mitigate greenhouse gas emissions. By storing carbon in trees and soil, forests help regulate the global climate. Additionally, they influence local weather patterns and promote biodiversity, which is essential for maintaining ecological balance.</p>
-    </div>
-    <div class="answer-item">
-        <h3>3. Which endangered species call forests home? 🌱</h3>
-        <p>Forests are home to numerous endangered species, including the majestic Bengal tiger, the critically endangered orangutan, and the elusive mountain gorilla. Each of these species plays a crucial role in their ecosystems, contributing to biodiversity and helping to maintain the health of their habitats. Protecting forests is essential not only for the survival of these animals but also for the ecological integrity of the entire environment.</p>
-    </div>
-    <div class="answer-item">
-        <h3>4. How are forests connected to the water cycle? 💧</h3>
-        <p>Forests play a significant role in the water cycle by absorbing rainfall and releasing water vapor through a process known as transpiration. This process helps maintain local humidity and influences precipitation patterns. Furthermore, forests store 75% of the world’s freshwater, acting as natural reservoirs that supply clean water to countless ecosystems and communities.</p>
-    </div>
-    <div class="answer-item">
-        <h3>5. What steps can individuals take to protect forests? 🐾</h3>
-        <p>Individuals can take several actions to protect forests, such as supporting sustainable products, participating in tree-planting initiatives, and advocating for policies that promote forest conservation. Reducing waste, recycling, and supporting local conservation organizations are also impactful ways to contribute. Every small action counts in the fight against deforestation and forest degradation.</p>
-    </div>
-    <div class="answer-item">
-        <h3>6. What are the most pressing threats to forests today? 📊</h3>
-        <p>Forests face multiple threats, including deforestation for agriculture, logging, and urban development. Climate change exacerbates these issues, leading to increased forest fires and pest infestations. Deforestation alone accounts for nearly 10% of global warming emissions, making it a critical challenge that requires immediate action to protect our planet's precious resources.</p>
-    </div>
-    <div class="answer-item">
-        <h3>7. How do forests contribute to soil health and prevent erosion? 🌾</h3>
-        <p>Forests contribute significantly to soil health through their root systems, which bind soil and reduce erosion by up to 90%. The organic matter from decaying leaves and plant material enriches the soil, enhancing its nutrient content and structure. This healthy soil supports diverse plant life and helps maintain the overall ecosystem balance.</p>
-    </div>
-    <div class="answer-item">
-        <h3>8. How do forests help local economies thrive? 🔍</h3>
-        <p>Over 1.6 billion people rely on forests for their livelihoods, with many communities depending on forest resources for food, medicine, and income. Sustainable forestry practices and ecotourism can create jobs and stimulate local economies while preserving natural resources. By valuing and protecting forests, we not only support biodiversity but also foster economic resilience.</p>
-    </div>
+   
+   
+   <div class="vision-item" id="water-cycle" 
+   data-image="images/water-cycle-management.jpg" 
+   data-title="Water Cycle Management" 
+   data-description="Forests play an important role in the water cycle by absorbing rainfall, storing water in their soil, and releasing it back into the atmosphere through transpiration and evaporation." 
+   data-key-points="Water storage, Flood prevention, Groundwater recharge"
+   data-additional-info="Forests are key in maintaining the water cycle. They help regulate water availability throughout the year by ensuring groundwater levels are replenished and preventing flash floods. Trees and plants absorb rainfall, and through their roots, they store it in the soil. The water then enters the atmosphere via transpiration, which helps in regulating the local climate and precipitation patterns. Additionally, forests play a vital role in ensuring clean water supply by filtering and purifying water before it reaches rivers and lakes.">
+   <div class="icon-container">💧</div>
+   <h3>3. Water Cycle Management 🚰</h3>
+   <p>Forests regulate water flow by absorbing rainfall, preventing floods, and ensuring clean water supply...</p>
 </div>
 
 
-<!-- Answers section ends here -->
+<div class="vision-item" id="soil-health" 
+data-image="images/soil-health.jpg" 
+data-title="Soil Health and Erosion Control" 
+data-description="Forests prevent soil erosion, improve soil quality, and support nutrient cycling. Their roots help stabilize the soil, preventing landslides and maintaining fertile land for agriculture." 
+data-key-points="Prevents erosion, Enhances soil fertility, Supports agriculture"
+data-additional-info="The roots of trees and plants form a natural barrier that holds the soil in place, preventing erosion caused by wind and water. This is especially important in hilly and coastal regions where soil erosion can lead to landslides and flooding. In addition to preventing erosion, forests enrich the soil by cycling nutrients. Fallen leaves, branches, and other organic matter break down to create nutrient-rich soil, which supports agriculture and provides habitat for beneficial organisms like earthworms. Healthy forests contribute to maintaining agricultural productivity, ensuring sustainable food sources for communities.">
+<div class="icon-container">🌱</div>
+<h3>4. Soil Health and Erosion Control 🌍</h3>
+<p>Forests help maintain soil fertility and prevent soil erosion, which is vital for sustainable agriculture...</p>
+</div>
+
+
+<div class="vision-item" id="economic-benefits" 
+data-image="images/economic-benefits.jpg" 
+data-title="Economic Benefits" 
+data-description="Forests provide a wide range of economic benefits through sustainable resources such as timber, medicinal plants, and eco-tourism, while also creating jobs and supporting local economies." 
+    data-key-points="Timber production, Eco-tourism, Job creation"
+    data-additional-info="Forests are a vital source of income for many communities through the sustainable harvesting of timber, non-timber products, and eco-tourism activities. Timber is used in construction, paper production, and furniture-making industries, contributing to economic growth. In addition to this, eco-tourism has become a significant industry in forested areas, attracting visitors interested in nature, wildlife, and adventure activities. This generates revenue and creates employment opportunities for local populations. Furthermore, forests support a wide range of industries such as pharmaceuticals, with many medicinal plants being harvested from forests, which helps in the development of drugs and health treatments.">
+    <div class="icon-container">💼</div>
+    <h3>5. Economic Benefits 📈</h3>
+    <p>Forests are not just ecological assets but also major contributors to local and global economies...</p>
+</div>
+
+
+<div class="vision-item" id="cultural-significance" 
+data-image="images/cultural-significance.jpg" 
+data-title="Cultural Significance" 
+data-description="Forests have immense cultural and spiritual importance for many indigenous communities around the world. They provide food, medicine, and materials necessary for traditional lifestyles." 
+data-key-points="Spiritual value, Traditional medicine, Cultural heritage"
+data-additional-info="For many indigenous cultures, forests are sacred spaces that hold deep spiritual significance. They are often seen as a source of life, a place for rituals, and a connection to ancestors. Beyond their spiritual role, forests provide essential resources for indigenous peoples, including food, medicinal plants, and materials for housing, clothing, and tools. Many plants and trees in forests are used in traditional healing practices, with their leaves, roots, and bark serving as remedies for various ailments. Forests also preserve cultural knowledge, as they are intertwined with the stories, traditions, and history of indigenous communities. Their preservation is crucial for maintaining both cultural identity and sustainable ways of life.">
+<div class="icon-container">🛖</div>
+<h3>6. Cultural Significance 🌏</h3>
+<p>For indigenous communities, forests hold great spiritual, cultural, and practical importance...</p>
+</div>
+
+
+<div class="vision-item" id="education-research" 
+data-image="images/education-research.jpg" 
+data-title="Education and Research" 
+data-description="Forests are essential for scientific research and environmental education, offering a living laboratory to study biodiversity, conservation, and sustainable management practices." 
+data-key-points="Biodiversity studies, Conservation research, Environmental education"
+data-additional-info="Forests provide unique opportunities for environmental research, serving as natural laboratories where scientists can study ecosystems, biodiversity, and climate change. They play a crucial role in understanding ecological processes and the effects of human activity on the environment. Researchers use forests to study plant and animal species, their interactions, and the impact of deforestation or reforestation. Forests also offer educational opportunities for students, researchers, and the general public, fostering awareness about the importance of nature conservation. Many universities and research institutions have forested areas dedicated to ecological studies, promoting sustainable forest management and biodiversity conservation. Through such studies, forests contribute valuable knowledge that helps shape environmental policies and conservation strategies globally.">
+<div class="icon-container">📚</div>
+<h3>7. Education and Research 🎓</h3>
+<p>Forests are not only natural wonders but also key to advancing education and research in biodiversity, conservation, and sustainable practices...</p>
+</div>
+
+
+<div class="vision-item" id="community-engagement" 
+data-image="images/community-engagement.jpg" 
+data-title="Community Engagement" 
+data-description="Community involvement in forest conservation helps ensure sustainable management, fosters awareness, and promotes collective action to preserve natural resources." 
+data-key-points="Local participation, Sustainable forestry, Collaboration"
+data-additional-info="Community engagement plays a critical role in the conservation and sustainable management of forests. By involving local communities in forest management practices, we ensure that the people who rely on forests for their livelihoods have a direct stake in their preservation. Local communities can actively contribute to reforestation efforts, help monitor deforestation, and advocate for policies that protect their natural resources. Engaging communities also fosters a sense of responsibility and ownership, which leads to more sustainable practices and better outcomes for both people and the environment. Education and training programs can help empower local people, particularly in rural areas, to understand the importance of sustainable forestry and environmental stewardship. Collaboration between government agencies, non-governmental organizations (NGOs), and local communities ensures a holistic approach to forest conservation that balances ecological, social, and economic needs.">
+<div class="icon-container">🤝</div>
+<h3>8. Community Engagement 🌎</h3>
+<p>Empowering local communities to participate in sustainable forestry practices is key to long-term forest preservation...</p>
+</div>
 
 
 
-<!-- Quizees section -->
+
+<div id="vision-modal" class="modall">
+    <div class="modall-content">
+        <div class="modall-left">
+            <h3 id="modall-title">Title Here</h3>
+            <p id="modal-description">Description goes here.</p>
+            
+            <h4>Key Points</h4>
+            <ul id="modal-key-points">
+                <!-- Dynamically added points -->
+            </ul>
+            
+            <h4>Additional Information</h4>
+            <p id="modal-additional-info">Additional details will appear here.</p>
+        </div>
+        <div class="modall-right">
+            <img id="modal-image" src="" alt="Related image">
+        </div>
+    </div>
+    <div class="modall-close" onclick="closeModal()">✖</div>
+</div>
+
+
+</section>
+</section>
+<!-- importance sections ends here -->
+
+<!-- importance sections ends here -->
+
+
+
+
+<!-- Memories Section -->
+<section class="memoreees" id="Memories">
+
+    <section class="memories-section" >
+        <h1 class="memories-title">Memories of Dense Forest 🌳✨</h1>
+        <div class="memories-text">
+            <h2>Moments to Cherish Forever 🌟</h2>
+            <p>The journey of creating the <strong>Dense Forest</strong> was filled with enthusiasm, hard work, and joy. Students, faculty members, and sponsors collaborated to make this project a success. Here, we celebrate the memories created during this inspiring environmental initiative.</p>
+            <p>From plantation drives to teamwork during soil preparation, fun-filled activity sessions, and reflective moments in the shade of saplings, every step was a milestone.</p>
+            <p>These unforgettable memories include hands-on participation, team-building exercises, creative workshops, and celebratory events that brought everyone closer to nature 🌿.</p>
+        </div>
+            <div class="memories-carousel">
+                <div class="carousel-item">
+            <img src="assets/memory1.jpg" alt="Students Preparing Soil" class="carousel-img">
+            <div class="carousel-label">Students working diligently to prepare the soil for plantation, learning the importance of sustainable practices.</div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/memory2.jpg" alt="Plantation Drive Celebration" class="carousel-img">
+            <div class="carousel-label">A joyous moment from the plantation drive, where participants celebrated their achievements with smiles and laughter.</div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/memory3.jpg" alt="Cultural Activities" class="carousel-img">
+            <div class="carousel-label">Cultural activities and workshops organized to raise awareness about environmental conservation.</div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/memory4.jpg" alt="Team Gathering" class="carousel-img">
+            <div class="carousel-label">Faculty and students bonding during an activity session, fostering teamwork and community spirit.</div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/memory5.jpg" alt="Reflection Under Saplings" class="carousel-img">
+            <div class="carousel-label">A serene moment of reflection under the newly planted saplings, appreciating nature's beauty.</div>
+        </div>
+    </div>
+</section>
+
+</section>
+<!-- Profile section using the existing container and aligning with flexbox -->
+<section class="container">
+   <div class="circle first"></div>
+   <div class="bar"></div>
+   <img alt="profile" height="90" width="90" class="profile" />
+   <div class="text"></div>
+   <div class="details"></div>
+   <div class="circle second" id="scrollToTop"></div> <!-- Added ID here -->
+</section>
+
+
+
+<section class="memories-section">
+    <div class="memories-text">
+        <h2>Creating Pathways with Precision 🛤️</h2>
+        <p>One of the highlights of the <strong>Dense Forest</strong> journey was the activity led by <strong>Praveen Shettiye</strong>, where MCA students collaborated to create a border for the front road by placing stones with care and precision.</p>
+        <p>This activity exemplified teamwork, attention to detail, and a collective commitment to enhancing the project's aesthetic and functional value. The stones were arranged to form a neat and sturdy border, creating a pathway that complements the natural surroundings.</p>
+        <p>With hands-on guidance from Praveen Shettiye, students learned the significance of planning, organization, and the impact of small details in achieving larger goals 🌟.</p>
+    </div>
+    <div class="memories-carousel">
+        <div class="carousel-item">
+            <img src="assets/stone1.jpg" alt="Students Placing Stones" class="carousel-img">
+            <div class="carousel-label">MCA students meticulously placing stones to create a smooth and defined border for the road.</div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/stone2.jpg" alt="Praveen Shettiye Guiding Students" class="carousel-img">
+            <div class="carousel-label">Praveen Shettiye guiding students during the activity, sharing his vision for the project's layout.</div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/stone3.jpg" alt="Close-Up of Stone Border" class="carousel-img">
+            <div class="carousel-label">A close-up view of the carefully aligned stones forming a clean and sturdy road border.</div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/stone4.jpg" alt="Students Working Together" class="carousel-img">
+            <div class="carousel-label">Students working together, demonstrating teamwork and dedication in completing the task.</div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/stone5.jpg" alt="Finished Stone Border" class="carousel-img">
+            <div class="carousel-label">The finished stone border, a testament to collaboration and attention to detail, enhancing the road's appearance.</div>
+        </div>
+    </div>
+
+    
+
+
+</section>
+
+
+
+
 
 <section class="plant-quiz-section">
     <h2>🌱 Plant Quiz: Test Your Knowledge! 🌿</h2>
@@ -910,28 +923,68 @@
 
  <!-- quizes section closed here -->
 
+<!-- footer contact setion -->
+<footer class="footer-section" id="Contact">
+    <div class="footer-top">
+        <div class="footer-logo">
+            <h2>Dense Forest 🌳</h2>
+            <p>A step towards creating a greener tomorrow through collaboration and sustainability.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#Journey">Journey</a></li>
+                <li><a href="#Gallery">Plants</a></li>
+                <li><a href="#Memories">Achievements</a></li>
+                <li><a href="#contact">Memories</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:denseforest@college.edu">denseforest@college.edu</a></p>
+            <p>Phone: <a href="tel:+911234567890">+91 12345 67890</a></p>
+            <p>Location: Near Girls Hostel, College Campus, India</p>
+        </div>
+    </div>
+
+    <!-- Final section: Join Our Conservation Efforts -->
+<section class="conservation-section">
+    <div class="conservation-content">
+      <h2 class="fade-in-title">Join Our Conservation Efforts</h2>
+      <p class="fade-in-text">
+        Contribute to the cause and help us protect these precious ecosystems for generations to come. Your support ensures the preservation of vital habitats and wildlife.
+      </p>
+      
+      <div class="cta-button-container">
+        <a href="#" class="cta-button">
+          <span class="cta-text">Get Involved</span>
+        </a>
+      </div>
+    </div>
+  </section>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Dense Forest Project. Designed with 💚 by MCA Students.</p>
+        <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    
+</footer>
+
+
+
+<!-- Contact sections ends here -->
+ 
+
 <!-- Other sections above -->
 
-<!-- Final section: Join Our Conservation Efforts -->
-<section class="conservation-section">
-  <div class="conservation-content">
-    <h2 class="fade-in-title">Join Our Conservation Efforts</h2>
-    <p class="fade-in-text">
-      Contribute to the cause and help us protect these precious ecosystems for generations to come. Your support ensures the preservation of vital habitats and wildlife.
-    </p>
-    
-    <div class="cta-button-container">
-      <a href="#" class="cta-button">
-        <span class="cta-text">Get Involved</span>
-      </a>
-    </div>
-  </div>
-</section>
 
-<!-- Footer (if needed) -->
-<footer class="footer">
-  <p>© 2024 Forest Conservation Initiative. All Rights Reserved.</p>
-</footer>
+
+</section>
 
 
     
@@ -942,5 +995,10 @@
     <script src="js-files/about-dense-forest.js"></script>
     <script src="js-files/quize.js"></script>
     <script src="js-files/quizes.js"></script>
+    <script src="quiz.js"></script>
+    <script src="js-files/quiz.js"></script>
+    <script src="js-files/journey.js"></script>
+    <script src="js-files/MissionAndVision.js"></script>
+    <script src="js-files/memories.js"></script>
 </body>
 </html>

@@ -3,141 +3,252 @@
     padding: 60px 20px;
     background-color: #3B3291;
     text-align: center;
-    color: #ffffff;
-    margin-top: 50px;
+    color: #120202;
+    margin: 50px auto;
+    border: 1px solid rgb(250, 241, 63);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5); /* Depth effect */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
+/* Section Title Styling */
 .section-title {
     font-size: 4.5rem;
     margin-bottom: 40px;
     color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Adds space between SVG and title */
+}
+
+.trees-svg {
+    display: inline-block;
+    margin-right: 10px;
 }
 
 /* Plants Container */
 .plants-container {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping to the next line */
-    justify-content: center; /* Center the cards horizontally */
-    gap: 20px; /* Space between cards */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-/* Plant Card Layout */
+/* Plant Card Styling */
 .plant-card {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    background: #3B3291;
-    color: #eaed22;
-    border-radius: 8px;
+    background: #adc7d9;
+    color: #060603;
+    border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: calc(25% - 20px); /* Four cards per row with space for gap */
-    position: relative; /* Needed for absolute positioning of the button */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow transition */
+    width: calc(25% - 20px);
+    max-width: 290px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
 }
 
-.plant-image img {
+.plant-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Plant Card Image */
+.plant-card img {
     width: 100%;
-    height: 445.333px;
+    height: 300px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
 }
 
+.plant-card img:hover {
+    transform: scale(1.1);
+}
+
+/* Plant Card Info */
 .plant-info {
     padding: 20px;
-    flex-grow: 1; /* Allow this section to grow and fill space */
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    justify-content: space-between; /* Space between content and button */
+    background-color: #f9f9f9;
+    color: #333;
+    border-radius: 8px;
+    margin: 0 auto;
+    max-width: 1090px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: justify;
 }
 
-/* Hover effect for plant cards */
-.plant-card:hover {
-    transform: scale(1.05); /* Slightly enlarge the card on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow depth on hover */
+.plant-info h3 {
+    font-size: 1.8rem;
+    color: #2c7a7b;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
-/* Fixed View More Button */
+.plant-info h4 {
+    font-size: 1.4rem;
+    color: #2f855a;
+    margin: 20px 0 10px;
+    position: relative;
+    padding-top: 10px;
+}
+
+.plant-info h4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+}
+
+.plant-info ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* View More Button */
 .view-more {
-    background-color: #1ee72c;
-    color: #fff;
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: auto; /* Push the button to the bottom */
-    transition: background-color 0.3s ease; /* Smooth background transition */
+    margin-top: auto;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .view-more:hover {
-    background-color: #5a49b7;
+    background-color: #457ba0;
+    transform: scale(1.1);
 }
 
-/* Modal Styling */
+/* Modal Styles */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* Sit on top */
-    left: 0;
+    display: none;
+    position: fixed;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
-    justify-content: center; /* Center the modal */
-    align-items: center; /* Center the modal */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow: auto;
+    padding-top: 50px;
 }
 
 .modal-content {
-    background-color: #1c7cac;
-    border-radius: 10px;
+    background-color: #ffffff;
+    margin: auto;
     padding: 20px;
-    width: 80%;
-    max-width: 500px; /* Max width for the modal */
-    opacity: 0; /* Start hidden */
-    transform: scale(0.8); /* Start scaled down */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Transition effects */
+    border: 1px solid #ddd;
+    width: 91%;
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease;
 }
 
-.modal-content.show {
-    opacity: 1; /* Fade in */
-    transform: scale(1); /* Scale up */
+.modal-body {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.modal-left {
+    flex: 1;
+}
+
+
+.modal-right {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-right img {
+    width: 400px;
+    height: 600px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
 }
 
 /* Close Button */
 .close {
+    position: absolute;
+    top: 40px;
+    right: 75px;
+    font-size: 1.5rem;
     color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
     cursor: pointer;
 }
 
-/* Responsive design */
+.close:hover {
+    color: #000;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .plant-card {
-        width: calc(50% - 20px); /* Two cards per row on smaller screens */
+        width: calc(50% - 20px);
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+
+    .plant-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .plant-info h4 {
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 480px) {
     .plant-card {
-        width: calc(100% - 20px); /* One card per row on very small screens */
+        width: calc(100% - 20px);
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
 
 
 
-.section-title {
-    display: flex;
-    align-items: center; /* Vertically center-align items */
-    justify-content: center; /* Horizontally center-align items */
-    gap: 10px; /* Adds space between SVG and text */
+
+/* demo */
+.modal-content {
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 8px;
 }
 
-.trees-svg {
-    display: inline-block; /* Ensures the SVG is treated as an inline element */
-    margin-right: 10px; /* Adds space between the SVG and the text */
+
+
+.plant-card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 11px;
 }
 
-.short-description{
-    font-size: 1rem;
+.plant-card img.hovered {
+    transform: scale(1.1); /* Slight zoom to show active hover */
 }

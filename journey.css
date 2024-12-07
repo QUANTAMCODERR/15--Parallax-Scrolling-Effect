@@ -1,0 +1,146 @@
+/* Overall Journey Section */
+.journey-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5); /* Shadow for depth */
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid rgb(66, 167, 19);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+
+}
+
+/* Journey Title */
+.journey-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Journey Text (Description part) */
+.journey-text {
+    flex: 1;
+    padding: 1rem;
+    min-width: 280px;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.journey-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.journey-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Journey Carousel (for images and videos) */
+.journey-carousel {
+    flex: 1;
+    min-width: 280px;
+    max-width: 1000px;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3d3b8a; /* Background color behind images/videos */
+    padding: 1rem; /* Padding for better spacing */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Image & Video Media (For dynamic display) */
+.carousel-img,
+.carousel-video {
+    width: 600px;
+    height: 400px;
+    border-radius: 8px;
+    display: none; /* Initially hide all media */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.carousel-img:first-child,
+.carousel-video:first-child {
+    display: block; /* Show first media initially */
+}
+
+/* Label for Images and Videos */
+.carousel-label {
+    position: absolute;
+    bottom: 5.0px;
+    left: 10%;
+    right: 10%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    max-width: 90%;
+    width: auto;
+    text-align: center;
+    z-index: 1;
+    ;
+    
+}
+
+/* Hover Effect for Labels */
+.carousel-item:hover .carousel-label {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker label on hover */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .journey-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .journey-text {
+        padding: 1rem 0;
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .journey-carousel {
+        padding: 0; /* Remove extra padding for smaller screens */
+    }
+
+    .carousel-img,
+    .carousel-video {
+        width: 100%; /* Adjust media size to fit smaller screens */
+        height: auto;
+    }
+}
+
+
+
+.journey-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.8);
+}
+
+
+.journey-section::before {
+    content: '';
+    position: absolute;
+
+    width: 95%;
+    height: 100%;
+    background-image: url('assets/rb_123045.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1; /* Further reduced for subtlety */
+    z-index: 0;
+    overflow: hidden;
+}

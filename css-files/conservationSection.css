@@ -1,0 +1,79 @@
+
+
+.action-button {
+    background-color: #5A50C5;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0px;
+}
+
+.action-button:hover {
+    background-color: #3B3291;
+}
+
+/* Conservation Section Styling */
+.conservation-section {
+    background: linear-gradient(135deg, rgba(59, 50, 145, 0.9), rgba(68, 150, 77, 0.9)); /* Gradient matching theme */
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px;
+    color: #fff; /* White text for contrast */
+    margin: 40px 0; /* Space before footer */
+    width: 100%;
+}
+
+.conservation-content {
+    max-width: 800px; /* Limit width for readability */
+}
+
+.cta-button {
+    background-color: #FFAA00; /* Button color */
+    color: #3B3291; /* Text color for the button */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for hover effects */
+}
+
+.cta-button:hover {
+    background-color: #00bc64; /* Change on hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #3B3291; /* Matches your theme */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.fade-in-title {
+    animation: fadeIn 1s ease; /* Optional fade-in animation */
+}
+
+.fade-in-text {
+    animation: fadeIn 1s ease 0.5s; /* Delayed fade-in for text */
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+

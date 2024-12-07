@@ -1,140 +1,126 @@
-/* Contact Section Styles */
-.contact {
-    padding: 50px;
-    background-color: #3B3291; /* Solid background color */
-    color: #fff; /* White text color */
-    font-family: 'Arial', sans-serif;
-    border-radius: 10px;
-    border: 2px solid #ffffff; /* White border */
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5); /* White shadow effect */
-    line-height: 1.8;
-    position: relative; /* Allows for positioning of pseudo elements */
+:root {
+    --footer-bg: #6a3522;
+    --text-color: #d3f6f6;
+    --accent-color: #66bfbf;
+    --light-text: #e6f5f5;
+    --divider-color: rgba(211, 246, 246, 0.2);
+    --font-family: 'Helvetica', sans-serif;
 }
 
-/* Background Image */
-.contact::before {
-    content: '';
-    background-image: url('assets/rb_123045.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute; /* Positioning behind text */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.3; /* Adjusted opacity for better visibility */
-    z-index: 0; /* Behind all content */
+.footer-section {
+    background-color: var(--footer-bg);
+    color: var(--text-color);
+    padding: 40px 20px;
+    font-family: var(--font-family);
 }
 
-.contact > * {
-    position: relative; /* Ensures content appears above the background image */
-    z-index: 1; /* Stacks content above the image */
-}
-
-/* Section Heading */
-.contact h1 {
-    font-size: 2.8em;
-    color: #ffffff; /* White color for better contrast */
-    margin-bottom: 20px;
-}
-
-/* Subsection Heading */
-.contact h2 {
-    font-size: 2em;
-    color: #e0e0e0; /* Lighter color for subheadings */
-    margin-top: 30px;
-}
-
-/* Paragraph Styles */
-.contact p {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-/* Contact Details */
-.contact-hod, .contact-contractors, .contact-plants, .get-in-touch {
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-bottom: 30px;
+    border-bottom: 1px solid var(--divider-color);
+    padding-bottom: 20px;
 }
 
-/* Blockquote Styling */
-.contact blockquote {
-    font-size: 1.2em;
-    color: #f3f706;
-    border-left: 5px solid #4caf50;
-    padding-left: 15px;
-    margin: 20px 0;
-    font-style: italic;
+.footer-logo,
+.footer-links,
+.footer-contact {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 20px;
 }
 
-/* Plant List Styling */
-.contact-plants ul {
-    list-style-type: circle;
-    padding-left: 40px;
+.footer-logo h2,
+.footer-links h3,
+.footer-contact h3 {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
 }
 
-.contact-plants li {
-    font-size: 18px;
+.footer-logo h2 {
+    font-size: 2rem;
+}
+
+.footer-logo p,
+.footer-contact p {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    line-height: 1.6;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
     margin-bottom: 10px;
 }
 
-/* Contractor List Styling */
-.contact-contractors ul {
-    list-style-type: none;
-    padding-left: 0;
+.footer-links ul li a,
+.footer-contact a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
 }
 
-.contact-contractors li {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 15px;
-    transition: background-color 0.3s ease; /* Smooth transition */
+.footer-links ul li a:hover,
+.footer-contact a:hover {
+    color: var(--accent-color);
 }
 
-/* Hover Effect for Contractors */
-.contact-contractors li:hover {
-    background-color: #4e4c8c; /* Highlight color on hover */
-    color: #ffffff; /* White text on hover */
-    cursor: pointer; /* Pointer cursor to indicate interactivity */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 0.85rem;
+    color: var(--light-text);
 }
 
-/* Get in Touch Section */
-.get-in-touch {
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease; /* Smooth transition */
+.footer-bottom p {
+    margin: 0;
 }
 
-/* Hover Effect for Get in Touch */
-.get-in-touch:hover {
-    background-color: #ff850b; /* Highlight color on hover */
-    transform: scale(1.03); /* Slight zoom-in effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhance the shadow */
+.footer-social a {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-
-.hod img {
-    width: 250px; /* Increase the width of the image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Keep the image round */
-    margin: 20px; /* Adjust margin to your preference */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for the image */
-    z-index: 1; /* Ensure the image is above the background */
-    position: absolute; /* Keep positioning context */
-    top: 20px; /* Align image to the top */
-    left: 20px; /* Align image to the left */
+.footer-social a:hover {
+    color: var(--accent-color);
 }
 
+.footer-social i {
+    display: inline-block;
+    vertical-align: middle;
+}
 
-.hod img {
-    width: 250px; /* Increased width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Round image */
-    margin: 20px; /* Margin around image */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    z-index: 1; /* Image above the background */
-    position: absolute; /* Maintain absolute positioning */
-    top: 20px; /* Top alignment */
-    left: 20px; /* Left alignment */
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-social {
+        margin-top: 10px;
+    }
+}
+
+.footer-section{
+    margin-bottom: -40px;
+    margin-top: 50px;
 }

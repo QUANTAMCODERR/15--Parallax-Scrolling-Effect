@@ -79,40 +79,27 @@ header nav a:hover {
 
 
 
+/* back to top button css part */
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 30px; /* 30px from the bottom of the viewport */
+    right: 0px; /* 30px from the right side */
+    display: none; /* Hidden by default */
+    width: 60px; /* Larger width */
+    height: 60px; /* Larger height */
+    font-size: 24px; /* Larger icon size */
+    border: none; /* No border */
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer;
+    background-color: #333; /* Default background color */
+    color: #fff; /* White text */
+    z-index: 1000; /* Ensure it stays on top */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#back-to-top:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+}
 
 
 
