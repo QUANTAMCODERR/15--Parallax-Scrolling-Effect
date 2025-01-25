@@ -49,7 +49,7 @@
     flex: 1;
     min-width: 280px;
     max-width: 1000px;
-    height: 550px;
+    height: 600px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -63,8 +63,8 @@
 /* Image & Video Media (For dynamic display) */
 .carousel-img,
 .carousel-video {
-    width: 600px;
-    height: 400px;
+    width: 660px;
+    height: 500px;
     border-radius: 8px;
     display: none; /* Initially hide all media */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
@@ -119,7 +119,7 @@
     .carousel-img,
     .carousel-video {
         width: 100%; /* Adjust media size to fit smaller screens */
-        height: auto;
+        height: autopx;
     }
 }
 
@@ -144,3 +144,4 @@
     z-index: 0;
     overflow: hidden;
 }
+

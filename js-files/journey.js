@@ -1,43 +1,47 @@
 document.querySelectorAll('.journey-carousel').forEach((carousel) => {
   let currentIndex = 0;
   const mediaItems = carousel.querySelectorAll('.carousel-img, .carousel-video');
-  const labels = carousel.querySelectorAll('.carousel-label'); // All labels corresponding to images/videos
+  const labels = carousel.querySelectorAll('.carousel-label');
   const totalMedia = mediaItems.length;
+  let timeoutId; // Store the timeout to clear when switching manually
 
   function showMedia(index) {
+    // Clear any existing timeout to avoid conflicts
+    clearTimeout(timeoutId);
+
     // Hide all media items and labels in this carousel
     mediaItems.forEach((media) => {
       media.style.display = 'none';
       if (media.tagName === 'VIDEO') {
-        media.pause(); // Pause all videos
-        media.currentTime = 0; // Reset video to the beginning
+        media.pause(); // Pause video
+        media.currentTime = 0; // Reset to the start
       }
     });
 
     labels.forEach((label) => {
-      label.style.display = 'none'; // Hide all labels
+      label.style.display = 'none';
     });
 
     // Show the current media item and its label
     const currentMedia = mediaItems[index];
-    const currentLabel = labels[index]; // Get the corresponding label for the current media
+    const currentLabel = labels[index];
 
     currentMedia.style.display = 'block';
-    currentLabel.style.display = 'block'; // Show the label for the current media
+    currentLabel.style.display = 'block';
 
     if (currentMedia.tagName === 'VIDEO') {
-      // If it's a video, autoplay it and change after 10 seconds
+      // If the current media is a video
       currentMedia.play();
-      currentMedia.addEventListener('ended', nextMedia, { once: true }); // Move to next after video ends
-      setTimeout(nextMedia, 20000); // Ensure transition happens after 10 seconds
+      timeoutId = setTimeout(nextMedia, 20000); // Change after 20 seconds or video end
+      currentMedia.addEventListener('ended', nextMedia, { once: true });
     } else {
       // If it's an image, change after 5 seconds
-      setTimeout(nextMedia, 10000);
+      timeoutId = setTimeout(nextMedia, 5000);
     }
   }
 
   function nextMedia() {
-    // Update index to the next item, or reset to the first
+    // Update index to the next media item, looping back if necessary
     currentIndex = (currentIndex + 1) % totalMedia;
     showMedia(currentIndex);
   }
