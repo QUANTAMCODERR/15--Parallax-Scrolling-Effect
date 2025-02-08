@@ -1,15 +1,15 @@
 // Get references to DOM elements
-const modal = document.getElementById('modal');
-const viewMoreButtons = document.querySelectorAll('.view-more');
-const closeButton = document.querySelector('.close');
-const additionalInfoDiv = document.getElementById('additional-info');
-const plantImage = document.getElementById('plant-image');
+const modal = document.getElementById("modal");
+const viewMoreButtons = document.querySelectorAll(".view-more");
+const closeButton = document.querySelector(".close");
+const additionalInfoDiv = document.getElementById("additional-info");
+const plantImage = document.getElementById("plant-image");
 let carouselInterval; // To store the interval ID
 
 // Additional information and image arrays for each plant
 const plantDetails = {
-    Neem: {
-        info: `
+  Neem: {
+    info: `
             <div class="plant-info">
                 <h3>🌿 Plant Name: Neem</h3>
                 <p>
@@ -66,15 +66,15 @@ const plantDetails = {
                 </section>
             </div>
         `,
-        images: [
-            'plants-images/neem4.jpg', 
-            'plants-images/neem1.JPG', 
-            'plants-images/neem2.jpg',
-            'plants-images/neem3.JPG'
-        ],
-    }
-    , Teak: {
-        info: `
+    images: [
+      "plants-images/neem4.jpg",
+      "plants-images/neem1.JPG",
+      "plants-images/neem2.jpg",
+      "plants-images/neem3.JPG",
+    ],
+  },
+  Teak: {
+    info: `
             <h3>🌿 Plant Name: Teak</h3>
             <h4>📝 Description:</h4>
             <p>Teak is a large deciduous tree known for its durable wood and resistance to termites and pests. It is highly valued for making furniture, boats, and construction materials.</p>
@@ -106,13 +106,14 @@ const plantDetails = {
             <h4>⚠️ Conservation Status:</h4>
             <p>Teak is cultivated extensively in plantations, but natural forests are under pressure due to logging. Sustainable management practices are essential for its conservation.</p>
         `,
-        images: [
-            'path_to_teak_image1.jpg', // Replace with actual paths
-            'path_to_teak_image2.jpg',
-            'path_to_teak_image3.jpg'
-        ],
-    },Tulsi: {
-        info: `
+    images: [
+      "path_to_teak_image1.jpg", // Replace with actual paths
+      "path_to_teak_image2.jpg",
+      "path_to_teak_image3.jpg",
+    ],
+  },
+  Tulsi: {
+    info: `
             <div class="plant-info">
                 <h3>🌿 Plant Name: Tulsi (Holy Basil)</h3>
                 <section class="description">
@@ -170,13 +171,14 @@ const plantDetails = {
                 </section>
             </div>
         `,
-        images: [
-            'plants-images/tulsi1.JPG', 
-            'plants-images/tulsi2.jpg', 
-            'plants-images/tulsi3.JPG',
-            'plants-images/tulsi4.JPG',
-        ],
-    },Teak: {
+    images: [
+      "plants-images/tulsi1.JPG",
+      "plants-images/tulsi2.jpg",
+      "plants-images/tulsi3.JPG",
+      "plants-images/tulsi4.JPG",
+    ],
+  },
+  Teak: {
     info: `
         <div class="plant-info">
     <h3>🌿 Plant Name: Teak (Sagwan)</h3>
@@ -237,15 +239,15 @@ const plantDetails = {
 
     `,
     images: [
-        'plants-images/sagvan.jpg', 
-        'plants-images/sagwan1.jpg', 
-        'plants-images/sagwan3.webp',
-        'plants-images/sagwan2.webp',
-        'plants-images/sagwan4.jpg',
-        'plants-images/sagwan5.jpg'
-
+      "plants-images/sagvan.jpg",
+      "plants-images/sagwan1.jpg",
+      "plants-images/sagwan3.webp",
+      "plants-images/sagwan2.webp",
+      "plants-images/sagwan4.jpg",
+      "plants-images/sagwan5.jpg",
     ],
-},Bhoma: {
+  },
+  Bhoma: {
     info: `
         <div class="plant-info">
     <h3>🌿 Plant Name: Bhoma (Awala)</h3>
@@ -306,14 +308,14 @@ const plantDetails = {
 
     `,
     images: [
-        'plants-images/bhoma2.webp', 
-        'plants-images/bhoma3.webp', 
-        'plants-images/bhoma4.avif',
-        'plants-images/bhoma5.jpg',
-        'plants-images/bhoma1.jpg'
+      "plants-images/bhoma2.webp",
+      "plants-images/bhoma3.webp",
+      "plants-images/bhoma4.avif",
+      "plants-images/bhoma5.jpg",
+      "plants-images/bhoma1.jpg",
     ],
-},
-Banyan: {
+  },
+  Banyan: {
     info: `
         <div class="plant-info">
     <h3>✯️ Plant Name: Banyan (Vat or Bargad)</h3>
@@ -373,13 +375,13 @@ Banyan: {
 </div>
     `,
     images: [
-        'plants-images/banyan.jpg', 
-        'plants-images/banyan1.jpg', 
-        'plants-images/banyan2.webp',
-        'plants-images/banyan4.jpg'
+      "plants-images/banyan.jpg",
+      "plants-images/banyan1.jpg",
+      "plants-images/banyan2.webp",
+      "plants-images/banyan4.jpg",
     ],
-}
-,Jackfruit: {
+  },
+  Jackfruit: {
     info: `
         <div class="plant-info">
     <h3>🌿 Plant Name: Jackfruit (Kathal, Phanas)</h3>
@@ -440,13 +442,13 @@ Banyan: {
 
     `,
     images: [
-        'plants-images/jackfruit1.jpg', 
-        'plants-images/jackfruit4.webp', 
-        'plants-images/jackfruit3.webp',
-        'plants-images/jackfruit.jpg'
+      "plants-images/jackfruit1.jpg",
+      "plants-images/jackfruit4.webp",
+      "plants-images/jackfruit3.webp",
+      "plants-images/jackfruit.jpg",
     ],
-}
-,PeepalTree: {
+  },
+  PeepalTree: {
     info: `
         <div class="plant-info">
     <h3>🌿 Plant Name: पीपल (Peepal Tree)</h3>
@@ -507,14 +509,14 @@ Banyan: {
 
     `,
     images: [
-        'plants-images/peepaltree.JPG', 
-        'plants-images/pipal.jpg', 
-        'plants-images/pipal1.jpg',
-        'plants-images/pipal2.jpg',
-        'plants-images/pipal3.webp'
+      "plants-images/peepaltree.JPG",
+      "plants-images/pipal.jpg",
+      "plants-images/pipal1.jpg",
+      "plants-images/pipal2.jpg",
+      "plants-images/pipal3.webp",
     ],
-}
-,Pomegranate: {
+  },
+  Pomegranate: {
     info: `
         <div class="plant-info">
     <h3>🌿 Plant Name: Pomegranate (अनार / Dalim)</h3>
@@ -575,13 +577,13 @@ Banyan: {
 
     `,
     images: [
-        'plants-images/pomo.jpg', 
-        'plants-images/pomo1.jpg', 
-        'plants-images/pomo2.jpg',
-        'plants-images/pomo4.jpg'
+      "plants-images/pomo.jpg",
+      "plants-images/pomo1.jpg",
+      "plants-images/pomo2.jpg",
+      "plants-images/pomo4.jpg",
     ],
-}
-,Champak: {
+  },
+  Champak: {
     info: `
         <div class="plant-info">
     <h3>🌿 Plant Name: Champak (चंपा / Chompa)</h3>
@@ -642,12 +644,12 @@ Banyan: {
 
     `,
     images: [
-        'plants-images/champ2.webp', 
-        'plants-images/cham1.jpg', 
-        'plants-images/cham.webp'
-        ],
-}
-,Panama : {
+      "plants-images/champ2.webp",
+      "plants-images/cham1.jpg",
+      "plants-images/cham.webp",
+    ],
+  },
+  Panama: {
     info: `
         <div class="plant-info">
     <h3>🌿 Plant Name: Jamun (Jambul)</h3>
@@ -708,12 +710,12 @@ Banyan: {
 
     `,
     images: [
-        'plants-images/jamun.JPG', 
-        'plants-images/jamun2.jpeg', 
-        'plants-images/jamun1.webp'
+      "plants-images/jamun.JPG",
+      "plants-images/jamun2.jpeg",
+      "plants-images/jamun1.webp",
     ],
-}
-,Burflower: {
+  },
+  Burflower: {
     info: `
         <div class="plant-info">
     <h3>🌿 Plant Name: Burflower (Kadam) / कदंब</h3>
@@ -774,13 +776,13 @@ Banyan: {
 
     `,
     images: [
-        'plants-images/burf1.jpg', 
-        'plants-images/burf2.jpg', 
-        'plants-images/burf3.jpg',
-        'plants-images/burf.jpg'
+      "plants-images/burf1.jpg",
+      "plants-images/burf2.jpg",
+      "plants-images/burf3.jpg",
+      "plants-images/burf.jpg",
     ],
-}
-,BauhiniaForficata: {
+  },
+  BauhiniaForficata: {
     info: `
         <div class="plant-info">
     <h3>🌿 Plant Name: Bauhinia Forficata (बौहिनिया फॉरफिकेटा)</h3>
@@ -841,13 +843,13 @@ Banyan: {
 
     `,
     images: [
-        'plants-images/bahu.webp', 
-        'plants-images/bahu1.webp', 
-        'plants-images/bahu2.webp',
-        'plants-images/bahu3.webp'
+      "plants-images/bahu.webp",
+      "plants-images/bahu1.webp",
+      "plants-images/bahu2.webp",
+      "plants-images/bahu3.webp",
     ],
-}
-,MangiferaCaesia: {
+  },
+  MangiferaCaesia: {
     info: `
         <div class="plant-info">
     <h3>🌿 Plant Name: Gulmohar Tree (Delonix regia)</h3>
@@ -908,12 +910,13 @@ Banyan: {
 
     `,
     images: [
-        'plants-images/GulmoharTree.JPG', 
-        'plants-images/gul.jpg', 
-        'plants-images/gul1.jpg',
-        'plants-images/gul2.jpg'
+      "plants-images/GulmoharTree.JPG",
+      "plants-images/gul.jpg",
+      "plants-images/gul1.jpg",
+      "plants-images/gul2.jpg",
     ],
-},CurryTree: {
+  },
+  CurryTree: {
     info: `
         <div class="plant-info">
             <h3>🌿 Plant Name: Curry Tree</h3>
@@ -973,12 +976,12 @@ Banyan: {
         </div>
     `,
     images: [
-        'plants-images/cur.jpg', 
-        'plants-images/cur1.jpg', 
-        'plants-images/cur2.jpg'
+      "plants-images/cur.jpg",
+      "plants-images/cur1.jpg",
+      "plants-images/cur2.jpg",
     ],
-}
-,Mango: {
+  },
+  Mango: {
     info: `
         <div class="plant-info">
             <h3>🌿 Plant Name: Mango</h3>
@@ -1038,13 +1041,13 @@ Banyan: {
         </div>
     `,
     images: [
-        'plants-images/man.jpg', 
-        'plants-images/man.webp', 
-        'plants-images/man1.jpg',
-        'plants-images/man2.webp'
+      "plants-images/man.jpg",
+      "plants-images/man.webp",
+      "plants-images/man1.jpg",
+      "plants-images/man2.webp",
     ],
-}
-,AlbiziaChinensis: {
+  },
+  AlbiziaChinensis: {
     info: `
         <div class="plant-info">
     <h3>🌿 Plant Name: Malabar Nut Tree (Justicia adhatoda)</h3>
@@ -1105,76 +1108,68 @@ Banyan: {
 
     `,
     images: [
-        'plants-images/malabar nuts.JPG', 
-        'plants-images/malabar nutss.JPG', 
-        'plants-images/nuts.jpg',
-        'plants-images/nut.webp'
+      "plants-images/malabar nuts.JPG",
+      "plants-images/malabar nutss.JPG",
+      "plants-images/nuts.jpg",
+      "plants-images/nut.webp",
     ],
-}
-    
-    
-    // Add more plants here...
+  },
+
+  // Add more plants here...
 };
 
 // Function to start the image carousel
 function startImageCarousel(images) {
-    let currentImageIndex = 0;
+  let currentImageIndex = 0;
 
-    // Set the initial image
+  // Set the initial image
+  plantImage.src = images[currentImageIndex];
+  plantImage.alt = `Image ${currentImageIndex + 1}`;
+
+  // Clear any existing interval
+  clearInterval(carouselInterval);
+
+  // Start the interval to change the image
+  carouselInterval = setInterval(() => {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
     plantImage.src = images[currentImageIndex];
     plantImage.alt = `Image ${currentImageIndex + 1}`;
-
-    // Clear any existing interval
-    clearInterval(carouselInterval);
-
-    // Start the interval to change the image
-    carouselInterval = setInterval(() => {
-        currentImageIndex = (currentImageIndex + 1) % images.length;
-        plantImage.src = images[currentImageIndex];
-        plantImage.alt = `Image ${currentImageIndex + 1}`;
-    }, 3000); // Change image every 3 seconds
+  }, 3000); // Change image every 3 seconds
 }
 
 // Open modal and populate with details and start carousel
-viewMoreButtons.forEach(button => {
-    button.addEventListener('click', (event) => {
-        const plantName = event.target.dataset.plant;
+viewMoreButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const plantName = event.target.dataset.plant;
 
-        if (plantDetails[plantName]) {
-            // Set the information content
-            additionalInfoDiv.innerHTML = plantDetails[plantName].info;
+    if (plantDetails[plantName]) {
+      // Set the information content
+      additionalInfoDiv.innerHTML = plantDetails[plantName].info;
 
-            // Start the image carousel
-            startImageCarousel(plantDetails[plantName].images);
-        } else {
-            additionalInfoDiv.innerHTML = `<p>No information available for ${plantName}.</p>`;
-            plantImage.src = '';
-            plantImage.alt = 'No Image Available';
-        }
+      // Start the image carousel
+      startImageCarousel(plantDetails[plantName].images);
+    } else {
+      additionalInfoDiv.innerHTML = `<p>No information available for ${plantName}.</p>`;
+      plantImage.src = "";
+      plantImage.alt = "No Image Available";
+    }
 
-        modal.style.display = 'block';
-    });
+    modal.style.display = "block";
+  });
 });
 
 // Close modal on button click
-closeButton.addEventListener('click', () => {
-    modal.style.display = 'none';
-    clearInterval(carouselInterval); // Stop the image carousel
+closeButton.addEventListener("click", () => {
+  modal.style.display = "none";
+  clearInterval(carouselInterval); // Stop the image carousel
 });
 
 // Close modal if clicked outside content
-window.addEventListener('click', (event) => {
-    if (event.target === modal) {
-        modal.style.display = 'none';
-        clearInterval(carouselInterval); // Stop the image carousel
-    }
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+    clearInterval(carouselInterval); // Stop the image carousel
+  }
 });
 
-
-
-
-
-
-
 // demo trial
-

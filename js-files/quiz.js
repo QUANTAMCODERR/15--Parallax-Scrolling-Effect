@@ -1,40 +1,40 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const quizItems = document.querySelectorAll(".quiz-item");
+  const quizItems = document.querySelectorAll(".quiz-item");
 
-    // Create popup overlay
-    const popupOverlay = document.createElement("div");
-    popupOverlay.classList.add("popup-overlay");
+  // Create popup overlay
+  const popupOverlay = document.createElement("div");
+  popupOverlay.classList.add("popup-overlay");
 
-    popupOverlay.innerHTML = `
+  popupOverlay.innerHTML = `
         <div class="popup-content">
             <span class="popup-close">&times;</span>
             <div class="popup-left"></div>
             <div class="popup-right"></div>
         </div>
     `;
-    document.body.appendChild(popupOverlay);
+  document.body.appendChild(popupOverlay);
 
-    // Close button functionality
-    const popupClose = popupOverlay.querySelector(".popup-close");
-    popupClose.addEventListener("click", () => {
-        popupOverlay.style.display = "none";
-    });
+  // Close button functionality
+  const popupClose = popupOverlay.querySelector(".popup-close");
+  popupClose.addEventListener("click", () => {
+    popupOverlay.style.display = "none";
+  });
 
-    const showPopup = (text, image) => {
-        const popupLeft = popupOverlay.querySelector(".popup-left");
-        const popupRight = popupOverlay.querySelector(".popup-right");
+  const showPopup = (text, image) => {
+    const popupLeft = popupOverlay.querySelector(".popup-left");
+    const popupRight = popupOverlay.querySelector(".popup-right");
 
-        popupLeft.innerHTML = text;
-        popupRight.innerHTML = `<img src="${image}" alt="Answer Image" style="width: 100%; border-radius: 10px;">`;
+    popupLeft.innerHTML = text;
+    popupRight.innerHTML = `<img src="${image}" alt="Answer Image" style="width: 100%; border-radius: 10px;">`;
 
-        popupOverlay.style.display = "flex";
-    };
+    popupOverlay.style.display = "flex";
+  };
 
-    quizItems.forEach((item, index) => {
-        item.addEventListener("click", () => {
-            const answers = [
-                {
-                    text: `
+  quizItems.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      const answers = [
+        {
+          text: `
                     <h3>🌍 How Would Our Planet Look Without Forests?</h3>
 
 <h4>🌳 The Vital Role of Forests</h4>
@@ -59,11 +59,10 @@ Forests act as a natural defense system against disasters. Their roots bind the 
 
 
                 `,
-                image: "quiz/ecologi1.jpg",
-                
-                },
-                {
-                    text: `
+          image: "quiz/ecologi1.jpg",
+        },
+        {
+          text: `
                     <h3>🌡️ What Role Do Forests Play in Combating Climate Change?</h3>
 
 <h4>🌳 Forests: Nature's Carbon Sinks</h4>
@@ -87,12 +86,10 @@ Combating climate change isn’t just the responsibility of governments and larg
 </p>
 
                 `,
-                image: "quiz/ecological.webp",
-                
-                
-                },
-                {
-                    text: `
+          image: "quiz/ecological.webp",
+        },
+        {
+          text: `
                     <h3>🐾 Which Endangered Species Call Forests Home?</h3>
 
 <h4>🌳 Forests: A Sanctuary for Endangered Species</h4>
@@ -116,11 +113,10 @@ Protecting endangered species is a global responsibility. By supporting conserva
 </p>
 
                 `,
-                image: "quiz/lungs.webp",
-                
-                },
-                {
-                    text: `
+          image: "quiz/lungs.webp",
+        },
+        {
+          text: `
                     <h3>💧 How Are Forests Connected to the Water Cycle?</h3>
 
 <h4>💦 Forests as Natural Water Reservoirs</h4>
@@ -144,11 +140,10 @@ The need to preserve forests has never been more urgent. Deforestation and clima
 </p>
 
                 `,
-                image: "quiz/watercycle.jpg",
-                
-                },
-                {
-                    text: `
+          image: "quiz/watercycle.jpg",
+        },
+        {
+          text: `
                     <h3>🌳 What Steps Can Individuals Take to Protect Forests?</h3>
 
 <h4>📄 1. Reduce Paper Usage</h4>
@@ -172,11 +167,10 @@ Protecting forests requires a collective effort. By taking meaningful steps—wh
 </p>
 
                 `,
-                image: "quiz/protect.jpg",
-                
-                },
-                {
-                    text: `
+          image: "quiz/protect.jpg",
+        },
+        {
+          text: `
                     <h3>🔥 What Are the Biggest Threats to Forests Today?</h3>
 
 <h4>🚜 1. Deforestation for Agriculture</h4>
@@ -200,24 +194,19 @@ Addressing these threats requires collective action on local, national, and glob
 </p>
 
                 `,
-                image: "quiz/thread.jpg",
-                
-                },
-            ];
+          image: "quiz/thread.jpg",
+        },
+      ];
 
-            const answer = answers[index];
-            showPopup(answer.text, answer.image);
-        });
+      const answer = answers[index];
+      showPopup(answer.text, answer.image);
     });
+  });
 
-    // Close popup when clicking outside the content
-    popupOverlay.addEventListener("click", (e) => {
-        if (e.target === popupOverlay) {
-            popupOverlay.style.display = "none";
-        }
-    });
+  // Close popup when clicking outside the content
+  popupOverlay.addEventListener("click", (e) => {
+    if (e.target === popupOverlay) {
+      popupOverlay.style.display = "none";
+    }
+  });
 });
-
-
-
-

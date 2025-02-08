@@ -1,305 +1,309 @@
 /* General container styling for the about section */
 .about-content {
-    margin-bottom: 50px;
-    text-align: center;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 /* Background and layout styling for the about section */
 .about {
-    background-color: #3B3291;
-    color: white;
-    padding: 200px 40px 40px;
+  background-color: #3b3291;
+  color: white;
+  padding: 200px 40px 40px;
 }
 
 /* Center the header */
 .about-header {
-    text-align: center;
-    margin-bottom: 30px;
-    padding-top: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 20px;
 }
 
 /* Header styling */
 .about-header h1 {
-    font-size: 1rem;
-    color: #fff;
-    display: inline-block;
-    opacity: 0;
-    animation: fadeInFromTop 1s forwards ease-in-out;
-    margin-left: 90px;
+  font-size: 1rem;
+  color: #fff;
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInFromTop 1s forwards ease-in-out;
+  margin-left: 90px;
 }
 
 /* Letter animation for the header */
 .about-header h1 span {
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(-50px); /* Start above */
-    animation: dropLetter 1s forwards ease-in-out;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-50px); /* Start above */
+  animation: dropLetter 1s forwards ease-in-out;
 }
 
-.about-header h1 span:nth-child(1) { animation-delay: 0.1s; }
-.about-header h1 span:nth-child(2) { animation-delay: 0.2s; }
-.about-header h1 span:nth-child(3) { animation-delay: 0.3s; }
+.about-header h1 span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.about-header h1 span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.about-header h1 span:nth-child(3) {
+  animation-delay: 0.3s;
+}
 /* Increment animation delay for other letters */
 
 /* Keyframes for the letter drop animation */
 @keyframes dropLetter {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Keyframes for fade-in animation from the top */
 @keyframes fadeInFromTop {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* About text styling */
 .about-text {
-    text-align: center;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
 /* Quiz section styling */
-.quiz-section ,
+.quiz-section,
 .plants-section {
-    background-color: #3B3291;
-    padding: 20px;
-    border: 2px solid white;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6);
-    animation: fadeIn 1s ease;
-    overflow: hidden;
-    position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 50px;
-    color: white;
+  background-color: #3b3291;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6);
+  animation: fadeIn 1s ease;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 50px;
+  color: white;
 }
 
 /* Hover effect for quiz section */
 .quiz-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.8);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.8);
 }
 
 /* Quiz grid layout */
 .quiz-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 20px;
-    animation: fadeIn 1.5s ease-in-out;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .quiz-grid:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 /* Quiz item styling */
 .quiz-item {
-    background-color: #0a659d;
-    border: 2px solid #66bfbf;
-    border-radius: 10px;
-    padding: 20px;
-    font-size: 1.2rem;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    position: relative;
-    opacity: 0; /* Hidden by default */
-    animation: slideIn 0.5s forwards;
-    margin: 10px 0;
+  background-color: #0a659d;
+  border: 2px solid #66bfbf;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1.2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  opacity: 0; /* Hidden by default */
+  animation: slideIn 0.5s forwards;
+  margin: 10px 0;
 }
 
 /* Hover effects for quiz items */
 .quiz-item:hover {
-    transform: translateY(-10px) scale(1.05);
-    background-color: #122323;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px) scale(1.05);
+  background-color: #122323;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
 }
 
 /* Hover effect for quiz question text */
-.quiz-item:hover  {
-    color: #fff; /* Change the color of the question */
-    transform: scale(1.1); /* Slightly enlarge the text */
-    transition: color 0.3s ease, transform 0.3s ease;
+.quiz-item:hover {
+  color: #fff; /* Change the color of the question */
+  transform: scale(1.1); /* Slightly enlarge the text */
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 /* Tooltip styling for quiz items */
 .quiz-item::after {
-    content: attr(data-funfact);
-    position: absolute;
-    bottom: 120%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    opacity: 0;
-    white-space: nowrap;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
+  content: attr(data-funfact);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 .quiz-item:hover::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* Fade-in animation */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* Slide-in animation */
 @keyframes slideIn {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* Popup overlay for "Do You Know" section */
 .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  color: white;
 }
 
 /* Popup content styling */
 .popup-content {
-    background-color: rgb(19, 170, 54);
-    border-radius: 15px;
-    padding: 20px;
-    width: 90%;
-    height: 90%; /* Limit the height */
-    overflow-y: auto; /* Add vertical scrolling if content overflows */
-    display: flex;
-    gap: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    position: relative;
-    color: white;
+  background-color: rgb(19, 170, 54);
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%;
+  height: 90%; /* Limit the height */
+  overflow-y: auto; /* Add vertical scrolling if content overflows */
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  color: white;
 }
 
 /* Close button for popup */
 .popup-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #333;
-    cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
 }
 
 .popup-close:hover {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #ffeb0c;
-    cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffeb0c;
+  cursor: pointer;
 }
 
 /* Left section of popup */
 .popup-left {
-    flex: 2;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex: 2;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .popup-left h3 {
-    margin-bottom: 10px;
-    font-size: 2rem;
-    color: #060686;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #060686;
 }
 .popup-left h4 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-    color: #f3e306;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #f3e306;
 }
 
 .popup-left p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #f1e7e7;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f1e7e7;
 }
 
 /* Right section of popup */
 .popup-right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .popup-right img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    margin-top: 10px;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
-    .about-header h1 {
-        font-size: 2.5rem;
-    }
+  .about-header h1 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .about-header h1 {
-        font-size: 2rem;
-    }
-    .about-vision {
-        font-size: 1rem;
-    }
+  .about-header h1 {
+    font-size: 2rem;
+  }
+  .about-vision {
+    font-size: 1rem;
+  }
 }
 
 /* Hover effect for quiz section */
 .plants-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.8);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.8);
 }
 
 .quiz-item:hover {
-    transform: translateY(-10px) scale(1.05);
-    background-color: #122323;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px) scale(1.05);
+  background-color: #122323;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
 }
-
-
-
